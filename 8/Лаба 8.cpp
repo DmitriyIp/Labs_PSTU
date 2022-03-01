@@ -77,7 +77,7 @@ int main()
        }
        for (int i = 0; i < n; i++)
        {
-         if (teams[i].points >= 45)
+         if (teams[i].points >= k)
          {
              sportteam << "Название: " << teams[i].name << endl << "Город: " << teams[i].city << endl << "Кол-во игроков: " << teams[i].players << endl << "Очки: " << teams[i].points << "\n\n";
          }
