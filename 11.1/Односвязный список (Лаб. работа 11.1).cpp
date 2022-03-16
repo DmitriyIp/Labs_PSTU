@@ -1,7 +1,7 @@
-﻿#include <iostream>
+#include <iostream>
 using namespace std;
 
-struct Node 
+struct Node
 {
 	char data;
 	Node* next;
@@ -33,26 +33,26 @@ void print_list(Node* first)
 {
 	Node* p = first;
 	while (p != 0)
-	{		
+	{
 		cout << p->data << "\t";
 		p = p->next;
 	}
 }
 
-Node* add_element(Node* first,int n, char b)
+Node* add_element(Node* first, int n, char b)
 {
 	Node* p = first;
 	Node* New = new(Node);
 	cout << "Введите новый элемент: ";
 	cin >> New->data;
-	for (int i = 0; i < n && p != 0; i++)
+	for (int i = 0; i < n - 1 && p->data!=b; i++)
 	{
-		if (p != nullptr && p->data == b)
-		{
-			New->next = p->next;
-			p->next = New;
-		}
 		p = p->next;
+	}
+	if (p != 0)
+	{
+		New->next = p->next;
+		p->next = New;
 	}
 	return first;
 }
@@ -61,11 +61,13 @@ int main()
 {
 	setlocale(LC_ALL, "rus");
 	char b;
-	cout << "После элемента с каким символом добавить новый элемент?  ";
-	cin >> b;
 	int n = 5;
 	Node* first = createlist(n);
-	add_element(first,n,b);
+	print_list(first);
+	cout << endl;
+	cout << "После элемента с каким символом добавить новый элемент?  ";
+	cin >> b;
+	add_element(first, n, b);
 	print_list(first);
 	return 0;
 }
