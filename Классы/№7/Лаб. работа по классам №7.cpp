@@ -13,6 +13,7 @@ public:
 	~List();
 	T& operator[](int index);
 	List operator+(const T k);
+	List operator+(const List<T>& p);
 	List& operator=(const List<T>& p);
 	int& operator()();
 	friend ostream& operator<< <>(ostream& out, const List<T>& p);
@@ -57,6 +58,27 @@ List<T>& List<T>::operator=(const List<T>& p)
 }
 
 template <class T>
+List<T> List<T>::operator+(const List<T>& p)
+{
+	int l;
+	if (size < p.size) l = p.size;
+	else l = size;
+	T jija(0, 0);
+	List<T> temp1(l, jija);
+	for (int i = 0; i < size; i++)
+	{
+		temp1.data[i].min += data[i].min;
+		temp1.data[i].sec += data[i].sec;
+	}
+	for (int i = 0; i < p.size; i++)
+	{
+		temp1.data[i].min += p.data[i].min;
+		temp1.data[i].sec += p.data[i].sec;
+	}
+	return temp1;
+}
+
+template <class T>
 T& List<T>::operator[](int index)
 {
 	if (index < size) return data[index];
@@ -96,7 +118,7 @@ istream& operator>>(istream& in, List<T>& p)
 
 class Time
 {
-private:
+public:
 	int min, sec;
 public:
 	Time(void);
@@ -108,8 +130,6 @@ public:
 	friend ostream& operator<< (ostream& out, const Time&);
 	friend istream& operator>> (istream& in, Time&);
 };
-
-
 
 Time::Time(void)
 {
@@ -144,6 +164,7 @@ Time Time::operator+(Time k)
 	Time temp(t / 60, t % 60);
 	return temp;
 }
+
 
 ostream& operator<< (ostream& out, const Time& p)
 {
@@ -183,13 +204,14 @@ int main()
 	cin >> a;
 	cout << a;
 	cout << '\n';
+	List<Time> c(5, t);
 	List<Time> b(10, t);
 	cout << b << '\n';
 	b = a;
 	cout << b << '\n';
 	cout << a[2] << '\n';
 	cout << "size a: " << a() << '\n';
-	b = a + t;
+	b = a + c;
 	cout << b << '\n';
 	return 0;
 }
