@@ -6,8 +6,8 @@ using namespace std;
 class creature
 {
 public:
-	creature(void);
-	~creature(void);
+	creature(void){};
+	~creature(void){};
 	virtual void Show() = 0;
 };
 
