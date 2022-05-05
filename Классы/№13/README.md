@@ -16,5 +16,5 @@
 
 г) Вариант 13.
   
-    ![image](https://github.com/DmitriyIp/Labs_PSTU/blob/master/Классы/№13/7MKkVwPjKS5vpPH87FYIgSqS2Moe3lgHM2BKxqiZZufIccqmBJlLpEfIoODPFt1GwcWGUjPXSgv4Gl0ZSb2ncrJY.jpg)
+   ![image](https://github.com/DmitriyIp/Labs_PSTU/blob/master/Классы/№13/32.jpg)
 
