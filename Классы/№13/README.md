@@ -1,6 +1,6 @@
 а) Лабораторная работа 13;
 
-б) "Программа, управляемая событиями.";
+б) "Стандартные обобщенные алгоритмы библиотеки STL.";
 
     1.  Создать последовательный контейнер.
     2.  Заполнить его элементами пользовательского типа (тип указан в варианте). Для пользовательского типа перегрузить необходимые операции.
@@ -16,5 +16,5 @@
 
 г) Вариант 13.
   
-    ![image](https://user-images.githubusercontent.com/91135391/166971675-55415e05-decd-4a3d-a22d-fe4bfcc83b41.png)
+    ![image](https://github.com/DmitriyIp/Labs_PSTU/blob/master/Классы/№13/7MKkVwPjKS5vpPH87FYIgSqS2Moe3lgHM2BKxqiZZufIccqmBJlLpEfIoODPFt1GwcWGUjPXSgv4Gl0ZSb2ncrJY.jpg)
 
