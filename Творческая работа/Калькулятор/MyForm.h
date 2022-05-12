@@ -94,7 +94,7 @@ namespace Калькулятор
 	private: System::Windows::Forms::Label^ label26;
 	private: System::Windows::Forms::Label^ label27;
 	private: System::Windows::Forms::Label^ label28;
-	private: System::Windows::Forms::Label^ label16;
+
 	private: System::Windows::Forms::Label^ label29;
 	private: System::Windows::Forms::Label^ label30;
 	private: System::Windows::Forms::Label^ label31;
@@ -307,6 +307,13 @@ private: System::Windows::Forms::Label^ label237;
 private: System::Windows::Forms::Label^ label238;
 private: System::Windows::Forms::Label^ label239;
 private: System::Windows::Forms::Label^ label240;
+
+
+
+private: System::Windows::Forms::Label^ label305;
+private: System::Windows::Forms::PictureBox^ pictureBox1;
+
+
 	private: System::ComponentModel::IContainer^ components;
 
 	protected:
@@ -368,7 +375,6 @@ private: System::Windows::Forms::Label^ label240;
 			this->label26 = (gcnew System::Windows::Forms::Label());
 			this->label27 = (gcnew System::Windows::Forms::Label());
 			this->label28 = (gcnew System::Windows::Forms::Label());
-			this->label16 = (gcnew System::Windows::Forms::Label());
 			this->label29 = (gcnew System::Windows::Forms::Label());
 			this->label30 = (gcnew System::Windows::Forms::Label());
 			this->label31 = (gcnew System::Windows::Forms::Label());
@@ -581,14 +587,17 @@ private: System::Windows::Forms::Label^ label240;
 			this->label238 = (gcnew System::Windows::Forms::Label());
 			this->label239 = (gcnew System::Windows::Forms::Label());
 			this->label240 = (gcnew System::Windows::Forms::Label());
+			this->label305 = (gcnew System::Windows::Forms::Label());
+			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// label3
 			// 
-			this->label3->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label3->BackColor = System::Drawing::Color::Snow;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Cambria Math", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label3->Location = System::Drawing::Point(90, 163);
+			this->label3->Location = System::Drawing::Point(84, 163);
 			this->label3->Margin = System::Windows::Forms::Padding(0);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(309, 65);
@@ -599,21 +608,21 @@ private: System::Windows::Forms::Label^ label240;
 			// label4
 			// 
 			this->label4->AutoSize = true;
-			this->label4->BackColor = System::Drawing::Color::WhiteSmoke;
-			this->label4->Font = (gcnew System::Drawing::Font(L"GOST type A", 72, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label4->Location = System::Drawing::Point(18, 120);
+			this->label4->BackColor = System::Drawing::Color::Snow;
+			this->label4->Font = (gcnew System::Drawing::Font(L"Candara Light", 72, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label4->Location = System::Drawing::Point(13, 108);
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(65, 101);
+			this->label4->Size = System::Drawing::Size(84, 117);
 			this->label4->TabIndex = 4;
 			this->label4->Text = L"{";
 			// 
 			// label2
 			// 
-			this->label2->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label2->BackColor = System::Drawing::Color::Snow;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Cambria Math", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label2->Location = System::Drawing::Point(90, 119);
+			this->label2->Location = System::Drawing::Point(84, 119);
 			this->label2->Margin = System::Windows::Forms::Padding(0);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(309, 65);
@@ -623,7 +632,7 @@ private: System::Windows::Forms::Label^ label240;
 			// 
 			// textBox1
 			// 
-			this->textBox1->Location = System::Drawing::Point(74, 120);
+			this->textBox1->Location = System::Drawing::Point(68, 120);
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(37, 20);
 			this->textBox1->TabIndex = 31;
@@ -631,7 +640,7 @@ private: System::Windows::Forms::Label^ label240;
 			// 
 			// textBox2
 			// 
-			this->textBox2->Location = System::Drawing::Point(166, 120);
+			this->textBox2->Location = System::Drawing::Point(160, 120);
 			this->textBox2->Name = L"textBox2";
 			this->textBox2->Size = System::Drawing::Size(37, 20);
 			this->textBox2->TabIndex = 32;
@@ -639,7 +648,7 @@ private: System::Windows::Forms::Label^ label240;
 			// 
 			// textBox3
 			// 
-			this->textBox3->Location = System::Drawing::Point(261, 120);
+			this->textBox3->Location = System::Drawing::Point(255, 120);
 			this->textBox3->Name = L"textBox3";
 			this->textBox3->Size = System::Drawing::Size(37, 20);
 			this->textBox3->TabIndex = 33;
@@ -647,7 +656,7 @@ private: System::Windows::Forms::Label^ label240;
 			// 
 			// textBox4
 			// 
-			this->textBox4->Location = System::Drawing::Point(74, 163);
+			this->textBox4->Location = System::Drawing::Point(68, 163);
 			this->textBox4->Name = L"textBox4";
 			this->textBox4->Size = System::Drawing::Size(37, 20);
 			this->textBox4->TabIndex = 34;
@@ -655,7 +664,7 @@ private: System::Windows::Forms::Label^ label240;
 			// 
 			// textBox5
 			// 
-			this->textBox5->Location = System::Drawing::Point(166, 163);
+			this->textBox5->Location = System::Drawing::Point(160, 163);
 			this->textBox5->Name = L"textBox5";
 			this->textBox5->Size = System::Drawing::Size(37, 20);
 			this->textBox5->TabIndex = 35;
@@ -663,7 +672,7 @@ private: System::Windows::Forms::Label^ label240;
 			// 
 			// textBox6
 			// 
-			this->textBox6->Location = System::Drawing::Point(261, 163);
+			this->textBox6->Location = System::Drawing::Point(255, 163);
 			this->textBox6->Name = L"textBox6";
 			this->textBox6->Size = System::Drawing::Size(37, 20);
 			this->textBox6->TabIndex = 36;
@@ -671,7 +680,7 @@ private: System::Windows::Forms::Label^ label240;
 			// 
 			// textBox7
 			// 
-			this->textBox7->Location = System::Drawing::Point(74, 207);
+			this->textBox7->Location = System::Drawing::Point(68, 207);
 			this->textBox7->Name = L"textBox7";
 			this->textBox7->Size = System::Drawing::Size(37, 20);
 			this->textBox7->TabIndex = 37;
@@ -679,7 +688,7 @@ private: System::Windows::Forms::Label^ label240;
 			// 
 			// textBox8
 			// 
-			this->textBox8->Location = System::Drawing::Point(166, 207);
+			this->textBox8->Location = System::Drawing::Point(160, 207);
 			this->textBox8->Name = L"textBox8";
 			this->textBox8->Size = System::Drawing::Size(37, 20);
 			this->textBox8->TabIndex = 38;
@@ -687,7 +696,7 @@ private: System::Windows::Forms::Label^ label240;
 			// 
 			// textBox9
 			// 
-			this->textBox9->Location = System::Drawing::Point(261, 207);
+			this->textBox9->Location = System::Drawing::Point(255, 207);
 			this->textBox9->Name = L"textBox9";
 			this->textBox9->Size = System::Drawing::Size(37, 20);
 			this->textBox9->TabIndex = 39;
@@ -695,29 +704,31 @@ private: System::Windows::Forms::Label^ label240;
 			// 
 			// button1
 			// 
+			this->button1->BackColor = System::Drawing::Color::Snow;
 			this->button1->ForeColor = System::Drawing::Color::Green;
-			this->button1->Location = System::Drawing::Point(32, 282);
+			this->button1->Location = System::Drawing::Point(18, 282);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(171, 56);
 			this->button1->TabIndex = 40;
 			this->button1->Text = L"Посчитать";
-			this->button1->UseVisualStyleBackColor = true;
+			this->button1->UseVisualStyleBackColor = false;
 			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click_1);
 			// 
 			// button2
 			// 
+			this->button2->BackColor = System::Drawing::Color::Snow;
 			this->button2->ForeColor = System::Drawing::Color::Red;
-			this->button2->Location = System::Drawing::Point(237, 282);
+			this->button2->Location = System::Drawing::Point(223, 282);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(171, 56);
 			this->button2->TabIndex = 41;
 			this->button2->Text = L"Очистить";
-			this->button2->UseVisualStyleBackColor = true;
+			this->button2->UseVisualStyleBackColor = false;
 			this->button2->Click += gcnew System::EventHandler(this, &MyForm::button2_Click);
 			// 
 			// textBox13
 			// 
-			this->textBox13->Location = System::Drawing::Point(345, 119);
+			this->textBox13->Location = System::Drawing::Point(339, 119);
 			this->textBox13->Name = L"textBox13";
 			this->textBox13->Size = System::Drawing::Size(37, 20);
 			this->textBox13->TabIndex = 45;
@@ -725,7 +736,7 @@ private: System::Windows::Forms::Label^ label240;
 			// 
 			// textBox14
 			// 
-			this->textBox14->Location = System::Drawing::Point(345, 163);
+			this->textBox14->Location = System::Drawing::Point(339, 163);
 			this->textBox14->Name = L"textBox14";
 			this->textBox14->Size = System::Drawing::Size(37, 20);
 			this->textBox14->TabIndex = 46;
@@ -733,7 +744,7 @@ private: System::Windows::Forms::Label^ label240;
 			// 
 			// textBox15
 			// 
-			this->textBox15->Location = System::Drawing::Point(345, 207);
+			this->textBox15->Location = System::Drawing::Point(339, 207);
 			this->textBox15->Name = L"textBox15";
 			this->textBox15->Size = System::Drawing::Size(37, 20);
 			this->textBox15->TabIndex = 47;
@@ -766,19 +777,20 @@ private: System::Windows::Forms::Label^ label240;
 			// label8
 			// 
 			this->label8->AutoSize = true;
-			this->label8->BackColor = System::Drawing::SystemColors::Control;
-			this->label8->Font = (gcnew System::Drawing::Font(L"GOST type A", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label8->BackColor = System::Drawing::Color::MidnightBlue;
+			this->label8->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
+			this->label8->Font = (gcnew System::Drawing::Font(L"Bahnschrift Condensed", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label8->Location = System::Drawing::Point(12, 452);
+			this->label8->Location = System::Drawing::Point(12, 448);
 			this->label8->Name = L"label8";
-			this->label8->Size = System::Drawing::Size(158, 37);
+			this->label8->Size = System::Drawing::Size(139, 44);
 			this->label8->TabIndex = 51;
 			this->label8->Text = L"Результат:";
 			// 
 			// label9
 			// 
 			this->label9->AutoSize = true;
-			this->label9->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label9->BackColor = System::Drawing::Color::Snow;
 			this->label9->Location = System::Drawing::Point(36, 511);
 			this->label9->Name = L"label9";
 			this->label9->Size = System::Drawing::Size(18, 13);
@@ -788,7 +800,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label10
 			// 
 			this->label10->AutoSize = true;
-			this->label10->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label10->BackColor = System::Drawing::Color::Snow;
 			this->label10->Location = System::Drawing::Point(36, 538);
 			this->label10->Name = L"label10";
 			this->label10->Size = System::Drawing::Size(18, 13);
@@ -798,7 +810,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label11
 			// 
 			this->label11->AutoSize = true;
-			this->label11->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label11->BackColor = System::Drawing::Color::Snow;
 			this->label11->Location = System::Drawing::Point(36, 567);
 			this->label11->Name = L"label11";
 			this->label11->Size = System::Drawing::Size(18, 13);
@@ -807,10 +819,10 @@ private: System::Windows::Forms::Label^ label240;
 			// 
 			// label1
 			// 
-			this->label1->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label1->BackColor = System::Drawing::Color::Snow;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Cambria Math", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label1->Location = System::Drawing::Point(86, 76);
+			this->label1->Location = System::Drawing::Point(80, 76);
 			this->label1->Margin = System::Windows::Forms::Padding(0, 3, 0, 3);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(280, 64);
@@ -820,7 +832,7 @@ private: System::Windows::Forms::Label^ label240;
 			// 
 			// label12
 			// 
-			this->label12->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label12->BackColor = System::Drawing::Color::Snow;
 			this->label12->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->label12->Location = System::Drawing::Point(11, 495);
 			this->label12->Name = L"label12";
@@ -829,22 +841,23 @@ private: System::Windows::Forms::Label^ label240;
 			// 
 			// label13
 			// 
-			this->label13->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label13->BackColor = System::Drawing::Color::Snow;
 			this->label13->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->label13->Location = System::Drawing::Point(12, 67);
 			this->label13->Name = L"label13";
-			this->label13->Size = System::Drawing::Size(387, 199);
+			this->label13->Size = System::Drawing::Size(396, 199);
 			this->label13->TabIndex = 56;
 			// 
 			// label14
 			// 
 			this->label14->AutoSize = true;
-			this->label14->BackColor = System::Drawing::SystemColors::Control;
-			this->label14->Font = (gcnew System::Drawing::Font(L"GOST type A", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label14->BackColor = System::Drawing::Color::LightSkyBlue;
+			this->label14->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
+			this->label14->Font = (gcnew System::Drawing::Font(L"Bahnschrift Condensed", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label14->Location = System::Drawing::Point(13, 18);
 			this->label14->Name = L"label14";
-			this->label14->Size = System::Drawing::Size(321, 37);
+			this->label14->Size = System::Drawing::Size(303, 44);
 			this->label14->TabIndex = 57;
 			this->label14->Text = L"Введите коэффициенты:";
 			// 
@@ -855,25 +868,25 @@ private: System::Windows::Forms::Label^ label240;
 			// label15
 			// 
 			this->label15->AutoSize = true;
-			this->label15->BackColor = System::Drawing::SystemColors::Control;
-			this->label15->Font = (gcnew System::Drawing::Font(L"GOST type A", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label15->BackColor = System::Drawing::Color::LightSkyBlue;
+			this->label15->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
+			this->label15->Font = (gcnew System::Drawing::Font(L"Bahnschrift Condensed", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label15->Location = System::Drawing::Point(539, 88);
+			this->label15->Location = System::Drawing::Point(542, 76);
 			this->label15->Name = L"label15";
-			this->label15->Size = System::Drawing::Size(126, 37);
+			this->label15->Size = System::Drawing::Size(125, 44);
 			this->label15->TabIndex = 72;
 			this->label15->Text = L"Решение:";
-			this->label15->Visible = false;
 			// 
 			// label17
 			// 
 			this->label17->AutoSize = true;
-			this->label17->BackColor = System::Drawing::Color::WhiteSmoke;
-			this->label17->Font = (gcnew System::Drawing::Font(L"GOST type A", 48, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->label17->Location = System::Drawing::Point(440, 150);
+			this->label17->BackColor = System::Drawing::Color::Snow;
+			this->label17->Font = (gcnew System::Drawing::Font(L"Candara Light", 48, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label17->Location = System::Drawing::Point(433, 138);
 			this->label17->Name = L"label17";
-			this->label17->Size = System::Drawing::Size(42, 67);
+			this->label17->Size = System::Drawing::Size(56, 78);
 			this->label17->TabIndex = 74;
 			this->label17->Text = L"(";
 			this->label17->Visible = false;
@@ -881,12 +894,12 @@ private: System::Windows::Forms::Label^ label240;
 			// label18
 			// 
 			this->label18->AutoSize = true;
-			this->label18->BackColor = System::Drawing::Color::WhiteSmoke;
-			this->label18->Font = (gcnew System::Drawing::Font(L"GOST type A", 48, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label18->BackColor = System::Drawing::Color::Snow;
+			this->label18->Font = (gcnew System::Drawing::Font(L"Candara Light", 48, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label18->Location = System::Drawing::Point(522, 149);
+			this->label18->Location = System::Drawing::Point(517, 138);
 			this->label18->Name = L"label18";
-			this->label18->Size = System::Drawing::Size(42, 67);
+			this->label18->Size = System::Drawing::Size(56, 78);
 			this->label18->TabIndex = 75;
 			this->label18->Text = L")";
 			this->label18->Visible = false;
@@ -894,7 +907,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label19
 			// 
 			this->label19->AutoSize = true;
-			this->label19->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label19->BackColor = System::Drawing::Color::Snow;
 			this->label19->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label19->Location = System::Drawing::Point(464, 157);
@@ -907,7 +920,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label20
 			// 
 			this->label20->AutoSize = true;
-			this->label20->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label20->BackColor = System::Drawing::Color::Snow;
 			this->label20->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label20->Location = System::Drawing::Point(491, 157);
@@ -920,7 +933,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label21
 			// 
 			this->label21->AutoSize = true;
-			this->label21->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label21->BackColor = System::Drawing::Color::Snow;
 			this->label21->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label21->Location = System::Drawing::Point(519, 157);
@@ -933,7 +946,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label22
 			// 
 			this->label22->AutoSize = true;
-			this->label22->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label22->BackColor = System::Drawing::Color::Snow;
 			this->label22->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label22->Location = System::Drawing::Point(464, 175);
@@ -946,7 +959,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label23
 			// 
 			this->label23->AutoSize = true;
-			this->label23->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label23->BackColor = System::Drawing::Color::Snow;
 			this->label23->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label23->Location = System::Drawing::Point(491, 175);
@@ -959,7 +972,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label24
 			// 
 			this->label24->AutoSize = true;
-			this->label24->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label24->BackColor = System::Drawing::Color::Snow;
 			this->label24->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label24->Location = System::Drawing::Point(519, 175);
@@ -972,7 +985,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label25
 			// 
 			this->label25->AutoSize = true;
-			this->label25->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label25->BackColor = System::Drawing::Color::Snow;
 			this->label25->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label25->Location = System::Drawing::Point(464, 192);
@@ -985,7 +998,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label26
 			// 
 			this->label26->AutoSize = true;
-			this->label26->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label26->BackColor = System::Drawing::Color::Snow;
 			this->label26->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label26->Location = System::Drawing::Point(491, 192);
@@ -998,7 +1011,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label27
 			// 
 			this->label27->AutoSize = true;
-			this->label27->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label27->BackColor = System::Drawing::Color::Snow;
 			this->label27->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label27->Location = System::Drawing::Point(519, 192);
@@ -1011,28 +1024,18 @@ private: System::Windows::Forms::Label^ label240;
 			// label28
 			// 
 			this->label28->AutoSize = true;
-			this->label28->BackColor = System::Drawing::Color::WhiteSmoke;
-			this->label28->Location = System::Drawing::Point(549, 172);
+			this->label28->BackColor = System::Drawing::Color::Snow;
+			this->label28->Location = System::Drawing::Point(551, 172);
 			this->label28->Name = L"label28";
 			this->label28->Size = System::Drawing::Size(13, 13);
 			this->label28->TabIndex = 85;
 			this->label28->Text = L"=";
 			this->label28->Visible = false;
 			// 
-			// label16
-			// 
-			this->label16->BackColor = System::Drawing::Color::WhiteSmoke;
-			this->label16->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label16->Location = System::Drawing::Point(414, 127);
-			this->label16->Name = L"label16";
-			this->label16->Size = System::Drawing::Size(371, 464);
-			this->label16->TabIndex = 73;
-			this->label16->Visible = false;
-			// 
 			// label29
 			// 
 			this->label29->AutoSize = true;
-			this->label29->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label29->BackColor = System::Drawing::Color::Snow;
 			this->label29->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label29->Location = System::Drawing::Point(519, 282);
@@ -1045,8 +1048,8 @@ private: System::Windows::Forms::Label^ label240;
 			// label30
 			// 
 			this->label30->AutoSize = true;
-			this->label30->BackColor = System::Drawing::Color::WhiteSmoke;
-			this->label30->Location = System::Drawing::Point(549, 262);
+			this->label30->BackColor = System::Drawing::Color::Snow;
+			this->label30->Location = System::Drawing::Point(551, 262);
 			this->label30->Name = L"label30";
 			this->label30->Size = System::Drawing::Size(13, 13);
 			this->label30->TabIndex = 97;
@@ -1056,7 +1059,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label31
 			// 
 			this->label31->AutoSize = true;
-			this->label31->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label31->BackColor = System::Drawing::Color::Snow;
 			this->label31->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label31->Location = System::Drawing::Point(491, 282);
@@ -1069,7 +1072,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label32
 			// 
 			this->label32->AutoSize = true;
-			this->label32->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label32->BackColor = System::Drawing::Color::Snow;
 			this->label32->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label32->Location = System::Drawing::Point(464, 282);
@@ -1082,7 +1085,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label33
 			// 
 			this->label33->AutoSize = true;
-			this->label33->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label33->BackColor = System::Drawing::Color::Snow;
 			this->label33->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label33->Location = System::Drawing::Point(519, 265);
@@ -1095,7 +1098,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label34
 			// 
 			this->label34->AutoSize = true;
-			this->label34->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label34->BackColor = System::Drawing::Color::Snow;
 			this->label34->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label34->Location = System::Drawing::Point(491, 265);
@@ -1108,7 +1111,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label35
 			// 
 			this->label35->AutoSize = true;
-			this->label35->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label35->BackColor = System::Drawing::Color::Snow;
 			this->label35->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label35->Location = System::Drawing::Point(464, 265);
@@ -1121,7 +1124,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label36
 			// 
 			this->label36->AutoSize = true;
-			this->label36->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label36->BackColor = System::Drawing::Color::Snow;
 			this->label36->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label36->Location = System::Drawing::Point(519, 247);
@@ -1134,7 +1137,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label37
 			// 
 			this->label37->AutoSize = true;
-			this->label37->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label37->BackColor = System::Drawing::Color::Snow;
 			this->label37->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label37->Location = System::Drawing::Point(491, 247);
@@ -1147,7 +1150,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label38
 			// 
 			this->label38->AutoSize = true;
-			this->label38->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label38->BackColor = System::Drawing::Color::Snow;
 			this->label38->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label38->Location = System::Drawing::Point(464, 247);
@@ -1160,12 +1163,12 @@ private: System::Windows::Forms::Label^ label240;
 			// label39
 			// 
 			this->label39->AutoSize = true;
-			this->label39->BackColor = System::Drawing::Color::WhiteSmoke;
-			this->label39->Font = (gcnew System::Drawing::Font(L"GOST type A", 48, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label39->BackColor = System::Drawing::Color::Snow;
+			this->label39->Font = (gcnew System::Drawing::Font(L"Candara Light", 48, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label39->Location = System::Drawing::Point(440, 240);
+			this->label39->Location = System::Drawing::Point(436, 228);
 			this->label39->Name = L"label39";
-			this->label39->Size = System::Drawing::Size(42, 67);
+			this->label39->Size = System::Drawing::Size(56, 78);
 			this->label39->TabIndex = 86;
 			this->label39->Text = L"(";
 			this->label39->Visible = false;
@@ -1173,12 +1176,12 @@ private: System::Windows::Forms::Label^ label240;
 			// label40
 			// 
 			this->label40->AutoSize = true;
-			this->label40->BackColor = System::Drawing::Color::WhiteSmoke;
-			this->label40->Font = (gcnew System::Drawing::Font(L"GOST type A", 48, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label40->BackColor = System::Drawing::Color::Snow;
+			this->label40->Font = (gcnew System::Drawing::Font(L"Candara Light", 48, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label40->Location = System::Drawing::Point(522, 239);
+			this->label40->Location = System::Drawing::Point(518, 228);
 			this->label40->Name = L"label40";
-			this->label40->Size = System::Drawing::Size(42, 67);
+			this->label40->Size = System::Drawing::Size(56, 78);
 			this->label40->TabIndex = 87;
 			this->label40->Text = L")";
 			this->label40->Visible = false;
@@ -1186,7 +1189,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label41
 			// 
 			this->label41->AutoSize = true;
-			this->label41->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label41->BackColor = System::Drawing::Color::Snow;
 			this->label41->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label41->Location = System::Drawing::Point(519, 387);
@@ -1199,8 +1202,8 @@ private: System::Windows::Forms::Label^ label240;
 			// label42
 			// 
 			this->label42->AutoSize = true;
-			this->label42->BackColor = System::Drawing::Color::WhiteSmoke;
-			this->label42->Location = System::Drawing::Point(549, 367);
+			this->label42->BackColor = System::Drawing::Color::Snow;
+			this->label42->Location = System::Drawing::Point(551, 367);
 			this->label42->Name = L"label42";
 			this->label42->Size = System::Drawing::Size(13, 13);
 			this->label42->TabIndex = 109;
@@ -1210,7 +1213,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label43
 			// 
 			this->label43->AutoSize = true;
-			this->label43->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label43->BackColor = System::Drawing::Color::Snow;
 			this->label43->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label43->Location = System::Drawing::Point(491, 387);
@@ -1223,7 +1226,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label44
 			// 
 			this->label44->AutoSize = true;
-			this->label44->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label44->BackColor = System::Drawing::Color::Snow;
 			this->label44->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label44->Location = System::Drawing::Point(464, 387);
@@ -1236,7 +1239,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label45
 			// 
 			this->label45->AutoSize = true;
-			this->label45->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label45->BackColor = System::Drawing::Color::Snow;
 			this->label45->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label45->Location = System::Drawing::Point(519, 370);
@@ -1249,7 +1252,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label46
 			// 
 			this->label46->AutoSize = true;
-			this->label46->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label46->BackColor = System::Drawing::Color::Snow;
 			this->label46->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label46->Location = System::Drawing::Point(491, 370);
@@ -1262,7 +1265,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label47
 			// 
 			this->label47->AutoSize = true;
-			this->label47->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label47->BackColor = System::Drawing::Color::Snow;
 			this->label47->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label47->Location = System::Drawing::Point(464, 370);
@@ -1275,7 +1278,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label48
 			// 
 			this->label48->AutoSize = true;
-			this->label48->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label48->BackColor = System::Drawing::Color::Snow;
 			this->label48->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label48->Location = System::Drawing::Point(519, 352);
@@ -1288,7 +1291,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label49
 			// 
 			this->label49->AutoSize = true;
-			this->label49->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label49->BackColor = System::Drawing::Color::Snow;
 			this->label49->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label49->Location = System::Drawing::Point(491, 352);
@@ -1301,7 +1304,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label50
 			// 
 			this->label50->AutoSize = true;
-			this->label50->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label50->BackColor = System::Drawing::Color::Snow;
 			this->label50->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label50->Location = System::Drawing::Point(464, 352);
@@ -1314,12 +1317,12 @@ private: System::Windows::Forms::Label^ label240;
 			// label51
 			// 
 			this->label51->AutoSize = true;
-			this->label51->BackColor = System::Drawing::Color::WhiteSmoke;
-			this->label51->Font = (gcnew System::Drawing::Font(L"GOST type A", 48, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label51->BackColor = System::Drawing::Color::Snow;
+			this->label51->Font = (gcnew System::Drawing::Font(L"Candara Light", 48, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label51->Location = System::Drawing::Point(440, 345);
+			this->label51->Location = System::Drawing::Point(435, 334);
 			this->label51->Name = L"label51";
-			this->label51->Size = System::Drawing::Size(42, 67);
+			this->label51->Size = System::Drawing::Size(56, 78);
 			this->label51->TabIndex = 98;
 			this->label51->Text = L"(";
 			this->label51->Visible = false;
@@ -1327,12 +1330,12 @@ private: System::Windows::Forms::Label^ label240;
 			// label52
 			// 
 			this->label52->AutoSize = true;
-			this->label52->BackColor = System::Drawing::Color::WhiteSmoke;
-			this->label52->Font = (gcnew System::Drawing::Font(L"GOST type A", 48, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label52->BackColor = System::Drawing::Color::Snow;
+			this->label52->Font = (gcnew System::Drawing::Font(L"Candara Light", 48, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label52->Location = System::Drawing::Point(522, 344);
+			this->label52->Location = System::Drawing::Point(517, 334);
 			this->label52->Name = L"label52";
-			this->label52->Size = System::Drawing::Size(42, 67);
+			this->label52->Size = System::Drawing::Size(56, 78);
 			this->label52->TabIndex = 99;
 			this->label52->Text = L")";
 			this->label52->Visible = false;
@@ -1340,7 +1343,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label53
 			// 
 			this->label53->AutoSize = true;
-			this->label53->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label53->BackColor = System::Drawing::Color::Snow;
 			this->label53->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label53->Location = System::Drawing::Point(519, 486);
@@ -1353,8 +1356,8 @@ private: System::Windows::Forms::Label^ label240;
 			// label54
 			// 
 			this->label54->AutoSize = true;
-			this->label54->BackColor = System::Drawing::Color::WhiteSmoke;
-			this->label54->Location = System::Drawing::Point(549, 466);
+			this->label54->BackColor = System::Drawing::Color::Snow;
+			this->label54->Location = System::Drawing::Point(551, 466);
 			this->label54->Name = L"label54";
 			this->label54->Size = System::Drawing::Size(13, 13);
 			this->label54->TabIndex = 121;
@@ -1364,7 +1367,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label55
 			// 
 			this->label55->AutoSize = true;
-			this->label55->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label55->BackColor = System::Drawing::Color::Snow;
 			this->label55->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label55->Location = System::Drawing::Point(491, 486);
@@ -1377,7 +1380,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label56
 			// 
 			this->label56->AutoSize = true;
-			this->label56->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label56->BackColor = System::Drawing::Color::Snow;
 			this->label56->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label56->Location = System::Drawing::Point(464, 486);
@@ -1390,7 +1393,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label57
 			// 
 			this->label57->AutoSize = true;
-			this->label57->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label57->BackColor = System::Drawing::Color::Snow;
 			this->label57->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label57->Location = System::Drawing::Point(519, 469);
@@ -1403,7 +1406,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label58
 			// 
 			this->label58->AutoSize = true;
-			this->label58->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label58->BackColor = System::Drawing::Color::Snow;
 			this->label58->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label58->Location = System::Drawing::Point(491, 469);
@@ -1416,7 +1419,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label59
 			// 
 			this->label59->AutoSize = true;
-			this->label59->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label59->BackColor = System::Drawing::Color::Snow;
 			this->label59->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label59->Location = System::Drawing::Point(464, 469);
@@ -1429,7 +1432,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label60
 			// 
 			this->label60->AutoSize = true;
-			this->label60->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label60->BackColor = System::Drawing::Color::Snow;
 			this->label60->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label60->Location = System::Drawing::Point(519, 451);
@@ -1442,7 +1445,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label61
 			// 
 			this->label61->AutoSize = true;
-			this->label61->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label61->BackColor = System::Drawing::Color::Snow;
 			this->label61->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label61->Location = System::Drawing::Point(491, 451);
@@ -1455,7 +1458,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label62
 			// 
 			this->label62->AutoSize = true;
-			this->label62->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label62->BackColor = System::Drawing::Color::Snow;
 			this->label62->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label62->Location = System::Drawing::Point(464, 451);
@@ -1468,12 +1471,12 @@ private: System::Windows::Forms::Label^ label240;
 			// label63
 			// 
 			this->label63->AutoSize = true;
-			this->label63->BackColor = System::Drawing::Color::WhiteSmoke;
-			this->label63->Font = (gcnew System::Drawing::Font(L"GOST type A", 48, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label63->BackColor = System::Drawing::Color::Snow;
+			this->label63->Font = (gcnew System::Drawing::Font(L"Candara Light", 48, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label63->Location = System::Drawing::Point(440, 444);
+			this->label63->Location = System::Drawing::Point(436, 432);
 			this->label63->Name = L"label63";
-			this->label63->Size = System::Drawing::Size(42, 67);
+			this->label63->Size = System::Drawing::Size(56, 78);
 			this->label63->TabIndex = 110;
 			this->label63->Text = L"(";
 			this->label63->Visible = false;
@@ -1481,12 +1484,12 @@ private: System::Windows::Forms::Label^ label240;
 			// label64
 			// 
 			this->label64->AutoSize = true;
-			this->label64->BackColor = System::Drawing::Color::WhiteSmoke;
-			this->label64->Font = (gcnew System::Drawing::Font(L"GOST type A", 48, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label64->BackColor = System::Drawing::Color::Snow;
+			this->label64->Font = (gcnew System::Drawing::Font(L"Candara Light", 48, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label64->Location = System::Drawing::Point(522, 443);
+			this->label64->Location = System::Drawing::Point(518, 432);
 			this->label64->Name = L"label64";
-			this->label64->Size = System::Drawing::Size(42, 67);
+			this->label64->Size = System::Drawing::Size(56, 78);
 			this->label64->TabIndex = 111;
 			this->label64->Text = L")";
 			this->label64->Visible = false;
@@ -1494,8 +1497,8 @@ private: System::Windows::Forms::Label^ label240;
 			// label65
 			// 
 			this->label65->AutoSize = true;
-			this->label65->BackColor = System::Drawing::Color::WhiteSmoke;
-			this->label65->Location = System::Drawing::Point(422, 172);
+			this->label65->BackColor = System::Drawing::Color::Snow;
+			this->label65->Location = System::Drawing::Point(418, 172);
 			this->label65->Name = L"label65";
 			this->label65->Size = System::Drawing::Size(28, 13);
 			this->label65->TabIndex = 122;
@@ -1505,8 +1508,8 @@ private: System::Windows::Forms::Label^ label240;
 			// label66
 			// 
 			this->label66->AutoSize = true;
-			this->label66->BackColor = System::Drawing::Color::WhiteSmoke;
-			this->label66->Location = System::Drawing::Point(421, 262);
+			this->label66->BackColor = System::Drawing::Color::Snow;
+			this->label66->Location = System::Drawing::Point(418, 262);
 			this->label66->Name = L"label66";
 			this->label66->Size = System::Drawing::Size(34, 13);
 			this->label66->TabIndex = 123;
@@ -1516,8 +1519,8 @@ private: System::Windows::Forms::Label^ label240;
 			// label67
 			// 
 			this->label67->AutoSize = true;
-			this->label67->BackColor = System::Drawing::Color::WhiteSmoke;
-			this->label67->Location = System::Drawing::Point(420, 367);
+			this->label67->BackColor = System::Drawing::Color::Snow;
+			this->label67->Location = System::Drawing::Point(417, 371);
 			this->label67->Name = L"label67";
 			this->label67->Size = System::Drawing::Size(34, 13);
 			this->label67->TabIndex = 124;
@@ -1527,8 +1530,8 @@ private: System::Windows::Forms::Label^ label240;
 			// label68
 			// 
 			this->label68->AutoSize = true;
-			this->label68->BackColor = System::Drawing::Color::WhiteSmoke;
-			this->label68->Location = System::Drawing::Point(420, 466);
+			this->label68->BackColor = System::Drawing::Color::Snow;
+			this->label68->Location = System::Drawing::Point(416, 466);
 			this->label68->Name = L"label68";
 			this->label68->Size = System::Drawing::Size(34, 13);
 			this->label68->TabIndex = 125;
@@ -1538,7 +1541,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label69
 			// 
 			this->label69->AutoSize = true;
-			this->label69->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label69->BackColor = System::Drawing::Color::Snow;
 			this->label69->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label69->Location = System::Drawing::Point(564, 175);
@@ -1551,7 +1554,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label70
 			// 
 			this->label70->AutoSize = true;
-			this->label70->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label70->BackColor = System::Drawing::Color::Snow;
 			this->label70->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label70->Location = System::Drawing::Point(583, 177);
@@ -1564,7 +1567,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label71
 			// 
 			this->label71->AutoSize = true;
-			this->label71->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label71->BackColor = System::Drawing::Color::Snow;
 			this->label71->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label71->Location = System::Drawing::Point(597, 175);
@@ -1577,7 +1580,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label72
 			// 
 			this->label72->AutoSize = true;
-			this->label72->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label72->BackColor = System::Drawing::Color::Snow;
 			this->label72->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label72->Location = System::Drawing::Point(620, 176);
@@ -1590,7 +1593,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label73
 			// 
 			this->label73->AutoSize = true;
-			this->label73->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label73->BackColor = System::Drawing::Color::Snow;
 			this->label73->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label73->Location = System::Drawing::Point(634, 175);
@@ -1603,7 +1606,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label74
 			// 
 			this->label74->AutoSize = true;
-			this->label74->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label74->BackColor = System::Drawing::Color::Snow;
 			this->label74->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label74->Location = System::Drawing::Point(657, 175);
@@ -1616,7 +1619,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label75
 			// 
 			this->label75->AutoSize = true;
-			this->label75->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label75->BackColor = System::Drawing::Color::Snow;
 			this->label75->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label75->Location = System::Drawing::Point(673, 175);
@@ -1629,7 +1632,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label76
 			// 
 			this->label76->AutoSize = true;
-			this->label76->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label76->BackColor = System::Drawing::Color::Snow;
 			this->label76->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label76->Location = System::Drawing::Point(706, 175);
@@ -1642,7 +1645,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label77
 			// 
 			this->label77->AutoSize = true;
-			this->label77->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label77->BackColor = System::Drawing::Color::Snow;
 			this->label77->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label77->Location = System::Drawing::Point(738, 175);
@@ -1655,7 +1658,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label78
 			// 
 			this->label78->AutoSize = true;
-			this->label78->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label78->BackColor = System::Drawing::Color::Snow;
 			this->label78->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label78->Location = System::Drawing::Point(597, 196);
@@ -1668,7 +1671,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label79
 			// 
 			this->label79->AutoSize = true;
-			this->label79->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label79->BackColor = System::Drawing::Color::Snow;
 			this->label79->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label79->Location = System::Drawing::Point(564, 196);
@@ -1681,7 +1684,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label80
 			// 
 			this->label80->AutoSize = true;
-			this->label80->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label80->BackColor = System::Drawing::Color::Snow;
 			this->label80->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label80->Location = System::Drawing::Point(692, 177);
@@ -1694,7 +1697,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label81
 			// 
 			this->label81->AutoSize = true;
-			this->label81->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label81->BackColor = System::Drawing::Color::Snow;
 			this->label81->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label81->Location = System::Drawing::Point(727, 177);
@@ -1707,7 +1710,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label82
 			// 
 			this->label82->AutoSize = true;
-			this->label82->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label82->BackColor = System::Drawing::Color::Snow;
 			this->label82->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label82->Location = System::Drawing::Point(761, 175);
@@ -1720,7 +1723,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label83
 			// 
 			this->label83->AutoSize = true;
-			this->label83->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label83->BackColor = System::Drawing::Color::Snow;
 			this->label83->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label83->Location = System::Drawing::Point(550, 196);
@@ -1733,7 +1736,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label84
 			// 
 			this->label84->AutoSize = true;
-			this->label84->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label84->BackColor = System::Drawing::Color::Snow;
 			this->label84->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label84->Location = System::Drawing::Point(583, 197);
@@ -1746,7 +1749,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label85
 			// 
 			this->label85->AutoSize = true;
-			this->label85->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label85->BackColor = System::Drawing::Color::Snow;
 			this->label85->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label85->Location = System::Drawing::Point(634, 196);
@@ -1759,7 +1762,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label86
 			// 
 			this->label86->AutoSize = true;
-			this->label86->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label86->BackColor = System::Drawing::Color::Snow;
 			this->label86->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label86->Location = System::Drawing::Point(620, 197);
@@ -1772,7 +1775,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label87
 			// 
 			this->label87->AutoSize = true;
-			this->label87->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label87->BackColor = System::Drawing::Color::Snow;
 			this->label87->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label87->Location = System::Drawing::Point(657, 196);
@@ -1785,7 +1788,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label88
 			// 
 			this->label88->AutoSize = true;
-			this->label88->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label88->BackColor = System::Drawing::Color::Snow;
 			this->label88->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label88->Location = System::Drawing::Point(673, 195);
@@ -1798,7 +1801,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label89
 			// 
 			this->label89->AutoSize = true;
-			this->label89->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label89->BackColor = System::Drawing::Color::Snow;
 			this->label89->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label89->Location = System::Drawing::Point(706, 195);
@@ -1811,7 +1814,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label90
 			// 
 			this->label90->AutoSize = true;
-			this->label90->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label90->BackColor = System::Drawing::Color::Snow;
 			this->label90->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label90->Location = System::Drawing::Point(738, 196);
@@ -1824,7 +1827,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label91
 			// 
 			this->label91->AutoSize = true;
-			this->label91->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label91->BackColor = System::Drawing::Color::Snow;
 			this->label91->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label91->Location = System::Drawing::Point(692, 198);
@@ -1837,7 +1840,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label92
 			// 
 			this->label92->AutoSize = true;
-			this->label92->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label92->BackColor = System::Drawing::Color::Snow;
 			this->label92->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label92->Location = System::Drawing::Point(727, 199);
@@ -1850,7 +1853,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label93
 			// 
 			this->label93->AutoSize = true;
-			this->label93->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label93->BackColor = System::Drawing::Color::Snow;
 			this->label93->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label93->Location = System::Drawing::Point(564, 216);
@@ -1863,7 +1866,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label94
 			// 
 			this->label94->AutoSize = true;
-			this->label94->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label94->BackColor = System::Drawing::Color::Snow;
 			this->label94->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label94->Location = System::Drawing::Point(597, 216);
@@ -1876,7 +1879,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label95
 			// 
 			this->label95->AutoSize = true;
-			this->label95->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label95->BackColor = System::Drawing::Color::Snow;
 			this->label95->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label95->Location = System::Drawing::Point(632, 216);
@@ -1889,7 +1892,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label96
 			// 
 			this->label96->AutoSize = true;
-			this->label96->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label96->BackColor = System::Drawing::Color::Snow;
 			this->label96->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label96->Location = System::Drawing::Point(583, 217);
@@ -1902,7 +1905,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label97
 			// 
 			this->label97->AutoSize = true;
-			this->label97->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label97->BackColor = System::Drawing::Color::Snow;
 			this->label97->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label97->Location = System::Drawing::Point(620, 217);
@@ -1915,7 +1918,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label98
 			// 
 			this->label98->AutoSize = true;
-			this->label98->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label98->BackColor = System::Drawing::Color::Snow;
 			this->label98->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label98->Location = System::Drawing::Point(763, 197);
@@ -1928,7 +1931,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label99
 			// 
 			this->label99->AutoSize = true;
-			this->label99->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label99->BackColor = System::Drawing::Color::Snow;
 			this->label99->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label99->Location = System::Drawing::Point(551, 216);
@@ -1941,7 +1944,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label100
 			// 
 			this->label100->AutoSize = true;
-			this->label100->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label100->BackColor = System::Drawing::Color::Snow;
 			this->label100->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label100->Location = System::Drawing::Point(657, 216);
@@ -1954,7 +1957,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label101
 			// 
 			this->label101->AutoSize = true;
-			this->label101->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label101->BackColor = System::Drawing::Color::Snow;
 			this->label101->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label101->Location = System::Drawing::Point(673, 217);
@@ -1967,7 +1970,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label102
 			// 
 			this->label102->AutoSize = true;
-			this->label102->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label102->BackColor = System::Drawing::Color::Snow;
 			this->label102->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label102->Location = System::Drawing::Point(706, 217);
@@ -1980,7 +1983,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label103
 			// 
 			this->label103->AutoSize = true;
-			this->label103->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label103->BackColor = System::Drawing::Color::Snow;
 			this->label103->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label103->Location = System::Drawing::Point(738, 217);
@@ -1993,7 +1996,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label104
 			// 
 			this->label104->AutoSize = true;
-			this->label104->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label104->BackColor = System::Drawing::Color::Snow;
 			this->label104->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label104->Location = System::Drawing::Point(763, 217);
@@ -2006,7 +2009,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label105
 			// 
 			this->label105->AutoSize = true;
-			this->label105->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label105->BackColor = System::Drawing::Color::Snow;
 			this->label105->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label105->Location = System::Drawing::Point(549, 231);
@@ -2019,7 +2022,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label106
 			// 
 			this->label106->AutoSize = true;
-			this->label106->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label106->BackColor = System::Drawing::Color::Snow;
 			this->label106->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label106->Location = System::Drawing::Point(564, 231);
@@ -2032,7 +2035,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label107
 			// 
 			this->label107->AutoSize = true;
-			this->label107->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label107->BackColor = System::Drawing::Color::Snow;
 			this->label107->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label107->Location = System::Drawing::Point(692, 218);
@@ -2045,7 +2048,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label108
 			// 
 			this->label108->AutoSize = true;
-			this->label108->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label108->BackColor = System::Drawing::Color::Snow;
 			this->label108->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label108->Location = System::Drawing::Point(727, 218);
@@ -2058,7 +2061,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label109
 			// 
 			this->label109->AutoSize = true;
-			this->label109->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label109->BackColor = System::Drawing::Color::Snow;
 			this->label109->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label109->Location = System::Drawing::Point(564, 266);
@@ -2071,7 +2074,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label110
 			// 
 			this->label110->AutoSize = true;
-			this->label110->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label110->BackColor = System::Drawing::Color::Snow;
 			this->label110->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label110->Location = System::Drawing::Point(583, 266);
@@ -2084,7 +2087,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label111
 			// 
 			this->label111->AutoSize = true;
-			this->label111->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label111->BackColor = System::Drawing::Color::Snow;
 			this->label111->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label111->Location = System::Drawing::Point(597, 265);
@@ -2097,7 +2100,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label112
 			// 
 			this->label112->AutoSize = true;
-			this->label112->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label112->BackColor = System::Drawing::Color::Snow;
 			this->label112->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label112->Location = System::Drawing::Point(620, 265);
@@ -2110,7 +2113,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label113
 			// 
 			this->label113->AutoSize = true;
-			this->label113->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label113->BackColor = System::Drawing::Color::Snow;
 			this->label113->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label113->Location = System::Drawing::Point(634, 265);
@@ -2123,7 +2126,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label115
 			// 
 			this->label115->AutoSize = true;
-			this->label115->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label115->BackColor = System::Drawing::Color::Snow;
 			this->label115->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label115->Location = System::Drawing::Point(657, 265);
@@ -2136,7 +2139,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label116
 			// 
 			this->label116->AutoSize = true;
-			this->label116->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label116->BackColor = System::Drawing::Color::Snow;
 			this->label116->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label116->Location = System::Drawing::Point(673, 265);
@@ -2149,7 +2152,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label117
 			// 
 			this->label117->AutoSize = true;
-			this->label117->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label117->BackColor = System::Drawing::Color::Snow;
 			this->label117->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label117->Location = System::Drawing::Point(696, 265);
@@ -2162,7 +2165,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label118
 			// 
 			this->label118->AutoSize = true;
-			this->label118->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label118->BackColor = System::Drawing::Color::Snow;
 			this->label118->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label118->Location = System::Drawing::Point(706, 265);
@@ -2175,7 +2178,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label119
 			// 
 			this->label119->AutoSize = true;
-			this->label119->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label119->BackColor = System::Drawing::Color::Snow;
 			this->label119->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label119->Location = System::Drawing::Point(727, 265);
@@ -2188,7 +2191,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label120
 			// 
 			this->label120->AutoSize = true;
-			this->label120->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label120->BackColor = System::Drawing::Color::Snow;
 			this->label120->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label120->Location = System::Drawing::Point(738, 264);
@@ -2201,7 +2204,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label121
 			// 
 			this->label121->AutoSize = true;
-			this->label121->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label121->BackColor = System::Drawing::Color::Snow;
 			this->label121->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label121->Location = System::Drawing::Point(761, 264);
@@ -2214,7 +2217,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label122
 			// 
 			this->label122->AutoSize = true;
-			this->label122->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label122->BackColor = System::Drawing::Color::Snow;
 			this->label122->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label122->Location = System::Drawing::Point(549, 286);
@@ -2227,7 +2230,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label123
 			// 
 			this->label123->AutoSize = true;
-			this->label123->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label123->BackColor = System::Drawing::Color::Snow;
 			this->label123->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label123->Location = System::Drawing::Point(564, 286);
@@ -2240,7 +2243,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label124
 			// 
 			this->label124->AutoSize = true;
-			this->label124->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label124->BackColor = System::Drawing::Color::Snow;
 			this->label124->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label124->Location = System::Drawing::Point(597, 286);
@@ -2253,7 +2256,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label125
 			// 
 			this->label125->AutoSize = true;
-			this->label125->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label125->BackColor = System::Drawing::Color::Snow;
 			this->label125->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label125->Location = System::Drawing::Point(583, 286);
@@ -2266,7 +2269,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label126
 			// 
 			this->label126->AutoSize = true;
-			this->label126->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label126->BackColor = System::Drawing::Color::Snow;
 			this->label126->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label126->Location = System::Drawing::Point(634, 286);
@@ -2279,7 +2282,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label127
 			// 
 			this->label127->AutoSize = true;
-			this->label127->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label127->BackColor = System::Drawing::Color::Snow;
 			this->label127->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label127->Location = System::Drawing::Point(620, 286);
@@ -2292,7 +2295,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label128
 			// 
 			this->label128->AutoSize = true;
-			this->label128->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label128->BackColor = System::Drawing::Color::Snow;
 			this->label128->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label128->Location = System::Drawing::Point(658, 285);
@@ -2305,7 +2308,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label129
 			// 
 			this->label129->AutoSize = true;
-			this->label129->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label129->BackColor = System::Drawing::Color::Snow;
 			this->label129->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label129->Location = System::Drawing::Point(672, 286);
@@ -2318,7 +2321,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label130
 			// 
 			this->label130->AutoSize = true;
-			this->label130->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label130->BackColor = System::Drawing::Color::Snow;
 			this->label130->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label130->Location = System::Drawing::Point(696, 286);
@@ -2331,7 +2334,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label131
 			// 
 			this->label131->AutoSize = true;
-			this->label131->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label131->BackColor = System::Drawing::Color::Snow;
 			this->label131->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label131->Location = System::Drawing::Point(706, 286);
@@ -2344,7 +2347,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label132
 			// 
 			this->label132->AutoSize = true;
-			this->label132->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label132->BackColor = System::Drawing::Color::Snow;
 			this->label132->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label132->Location = System::Drawing::Point(727, 286);
@@ -2357,7 +2360,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label133
 			// 
 			this->label133->AutoSize = true;
-			this->label133->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label133->BackColor = System::Drawing::Color::Snow;
 			this->label133->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label133->Location = System::Drawing::Point(738, 286);
@@ -2370,7 +2373,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label134
 			// 
 			this->label134->AutoSize = true;
-			this->label134->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label134->BackColor = System::Drawing::Color::Snow;
 			this->label134->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label134->Location = System::Drawing::Point(763, 286);
@@ -2383,7 +2386,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label135
 			// 
 			this->label135->AutoSize = true;
-			this->label135->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label135->BackColor = System::Drawing::Color::Snow;
 			this->label135->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label135->Location = System::Drawing::Point(549, 306);
@@ -2396,7 +2399,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label136
 			// 
 			this->label136->AutoSize = true;
-			this->label136->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label136->BackColor = System::Drawing::Color::Snow;
 			this->label136->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label136->Location = System::Drawing::Point(564, 306);
@@ -2409,7 +2412,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label138
 			// 
 			this->label138->AutoSize = true;
-			this->label138->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label138->BackColor = System::Drawing::Color::Snow;
 			this->label138->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label138->Location = System::Drawing::Point(583, 306);
@@ -2422,7 +2425,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label139
 			// 
 			this->label139->AutoSize = true;
-			this->label139->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label139->BackColor = System::Drawing::Color::Snow;
 			this->label139->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label139->Location = System::Drawing::Point(597, 306);
@@ -2435,7 +2438,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label140
 			// 
 			this->label140->AutoSize = true;
-			this->label140->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label140->BackColor = System::Drawing::Color::Snow;
 			this->label140->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label140->Location = System::Drawing::Point(634, 306);
@@ -2448,7 +2451,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label141
 			// 
 			this->label141->AutoSize = true;
-			this->label141->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label141->BackColor = System::Drawing::Color::Snow;
 			this->label141->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label141->Location = System::Drawing::Point(620, 306);
@@ -2461,7 +2464,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label142
 			// 
 			this->label142->AutoSize = true;
-			this->label142->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label142->BackColor = System::Drawing::Color::Snow;
 			this->label142->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label142->Location = System::Drawing::Point(658, 306);
@@ -2474,7 +2477,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label114
 			// 
 			this->label114->AutoSize = true;
-			this->label114->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label114->BackColor = System::Drawing::Color::Snow;
 			this->label114->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label114->Location = System::Drawing::Point(673, 306);
@@ -2487,7 +2490,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label137
 			// 
 			this->label137->AutoSize = true;
-			this->label137->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label137->BackColor = System::Drawing::Color::Snow;
 			this->label137->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label137->Location = System::Drawing::Point(696, 306);
@@ -2500,7 +2503,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label143
 			// 
 			this->label143->AutoSize = true;
-			this->label143->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label143->BackColor = System::Drawing::Color::Snow;
 			this->label143->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label143->Location = System::Drawing::Point(706, 306);
@@ -2513,7 +2516,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label144
 			// 
 			this->label144->AutoSize = true;
-			this->label144->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label144->BackColor = System::Drawing::Color::Snow;
 			this->label144->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label144->Location = System::Drawing::Point(727, 306);
@@ -2526,7 +2529,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label145
 			// 
 			this->label145->AutoSize = true;
-			this->label145->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label145->BackColor = System::Drawing::Color::Snow;
 			this->label145->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label145->Location = System::Drawing::Point(738, 306);
@@ -2539,7 +2542,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label146
 			// 
 			this->label146->AutoSize = true;
-			this->label146->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label146->BackColor = System::Drawing::Color::Snow;
 			this->label146->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label146->Location = System::Drawing::Point(761, 306);
@@ -2552,7 +2555,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label147
 			// 
 			this->label147->AutoSize = true;
-			this->label147->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label147->BackColor = System::Drawing::Color::Snow;
 			this->label147->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label147->Location = System::Drawing::Point(549, 324);
@@ -2565,7 +2568,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label148
 			// 
 			this->label148->AutoSize = true;
-			this->label148->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label148->BackColor = System::Drawing::Color::Snow;
 			this->label148->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label148->Location = System::Drawing::Point(564, 323);
@@ -2578,7 +2581,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label149
 			// 
 			this->label149->AutoSize = true;
-			this->label149->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label149->BackColor = System::Drawing::Color::Snow;
 			this->label149->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label149->Location = System::Drawing::Point(564, 428);
@@ -2591,7 +2594,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label150
 			// 
 			this->label150->AutoSize = true;
-			this->label150->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label150->BackColor = System::Drawing::Color::Snow;
 			this->label150->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label150->Location = System::Drawing::Point(549, 429);
@@ -2604,7 +2607,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label151
 			// 
 			this->label151->AutoSize = true;
-			this->label151->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label151->BackColor = System::Drawing::Color::Snow;
 			this->label151->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label151->Location = System::Drawing::Point(761, 411);
@@ -2617,7 +2620,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label152
 			// 
 			this->label152->AutoSize = true;
-			this->label152->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label152->BackColor = System::Drawing::Color::Snow;
 			this->label152->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label152->Location = System::Drawing::Point(738, 411);
@@ -2630,7 +2633,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label153
 			// 
 			this->label153->AutoSize = true;
-			this->label153->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label153->BackColor = System::Drawing::Color::Snow;
 			this->label153->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label153->Location = System::Drawing::Point(727, 411);
@@ -2643,7 +2646,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label154
 			// 
 			this->label154->AutoSize = true;
-			this->label154->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label154->BackColor = System::Drawing::Color::Snow;
 			this->label154->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label154->Location = System::Drawing::Point(706, 411);
@@ -2656,7 +2659,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label155
 			// 
 			this->label155->AutoSize = true;
-			this->label155->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label155->BackColor = System::Drawing::Color::Snow;
 			this->label155->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label155->Location = System::Drawing::Point(696, 411);
@@ -2669,7 +2672,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label156
 			// 
 			this->label156->AutoSize = true;
-			this->label156->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label156->BackColor = System::Drawing::Color::Snow;
 			this->label156->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label156->Location = System::Drawing::Point(673, 411);
@@ -2682,7 +2685,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label157
 			// 
 			this->label157->AutoSize = true;
-			this->label157->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label157->BackColor = System::Drawing::Color::Snow;
 			this->label157->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label157->Location = System::Drawing::Point(658, 411);
@@ -2695,7 +2698,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label158
 			// 
 			this->label158->AutoSize = true;
-			this->label158->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label158->BackColor = System::Drawing::Color::Snow;
 			this->label158->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label158->Location = System::Drawing::Point(620, 411);
@@ -2708,7 +2711,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label159
 			// 
 			this->label159->AutoSize = true;
-			this->label159->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label159->BackColor = System::Drawing::Color::Snow;
 			this->label159->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label159->Location = System::Drawing::Point(634, 411);
@@ -2721,7 +2724,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label160
 			// 
 			this->label160->AutoSize = true;
-			this->label160->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label160->BackColor = System::Drawing::Color::Snow;
 			this->label160->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label160->Location = System::Drawing::Point(597, 411);
@@ -2734,7 +2737,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label161
 			// 
 			this->label161->AutoSize = true;
-			this->label161->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label161->BackColor = System::Drawing::Color::Snow;
 			this->label161->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label161->Location = System::Drawing::Point(583, 411);
@@ -2747,7 +2750,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label162
 			// 
 			this->label162->AutoSize = true;
-			this->label162->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label162->BackColor = System::Drawing::Color::Snow;
 			this->label162->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label162->Location = System::Drawing::Point(564, 411);
@@ -2760,7 +2763,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label163
 			// 
 			this->label163->AutoSize = true;
-			this->label163->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label163->BackColor = System::Drawing::Color::Snow;
 			this->label163->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label163->Location = System::Drawing::Point(549, 411);
@@ -2773,7 +2776,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label164
 			// 
 			this->label164->AutoSize = true;
-			this->label164->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label164->BackColor = System::Drawing::Color::Snow;
 			this->label164->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label164->Location = System::Drawing::Point(763, 391);
@@ -2786,7 +2789,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label165
 			// 
 			this->label165->AutoSize = true;
-			this->label165->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label165->BackColor = System::Drawing::Color::Snow;
 			this->label165->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label165->Location = System::Drawing::Point(738, 391);
@@ -2799,7 +2802,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label166
 			// 
 			this->label166->AutoSize = true;
-			this->label166->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label166->BackColor = System::Drawing::Color::Snow;
 			this->label166->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label166->Location = System::Drawing::Point(727, 391);
@@ -2812,7 +2815,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label167
 			// 
 			this->label167->AutoSize = true;
-			this->label167->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label167->BackColor = System::Drawing::Color::Snow;
 			this->label167->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label167->Location = System::Drawing::Point(706, 391);
@@ -2825,7 +2828,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label168
 			// 
 			this->label168->AutoSize = true;
-			this->label168->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label168->BackColor = System::Drawing::Color::Snow;
 			this->label168->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label168->Location = System::Drawing::Point(696, 391);
@@ -2838,7 +2841,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label169
 			// 
 			this->label169->AutoSize = true;
-			this->label169->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label169->BackColor = System::Drawing::Color::Snow;
 			this->label169->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label169->Location = System::Drawing::Point(672, 391);
@@ -2851,7 +2854,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label170
 			// 
 			this->label170->AutoSize = true;
-			this->label170->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label170->BackColor = System::Drawing::Color::Snow;
 			this->label170->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label170->Location = System::Drawing::Point(658, 390);
@@ -2864,7 +2867,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label171
 			// 
 			this->label171->AutoSize = true;
-			this->label171->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label171->BackColor = System::Drawing::Color::Snow;
 			this->label171->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label171->Location = System::Drawing::Point(620, 391);
@@ -2877,7 +2880,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label172
 			// 
 			this->label172->AutoSize = true;
-			this->label172->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label172->BackColor = System::Drawing::Color::Snow;
 			this->label172->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label172->Location = System::Drawing::Point(634, 391);
@@ -2890,7 +2893,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label173
 			// 
 			this->label173->AutoSize = true;
-			this->label173->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label173->BackColor = System::Drawing::Color::Snow;
 			this->label173->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label173->Location = System::Drawing::Point(583, 391);
@@ -2903,7 +2906,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label174
 			// 
 			this->label174->AutoSize = true;
-			this->label174->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label174->BackColor = System::Drawing::Color::Snow;
 			this->label174->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label174->Location = System::Drawing::Point(597, 391);
@@ -2916,7 +2919,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label175
 			// 
 			this->label175->AutoSize = true;
-			this->label175->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label175->BackColor = System::Drawing::Color::Snow;
 			this->label175->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label175->Location = System::Drawing::Point(564, 391);
@@ -2929,7 +2932,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label176
 			// 
 			this->label176->AutoSize = true;
-			this->label176->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label176->BackColor = System::Drawing::Color::Snow;
 			this->label176->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label176->Location = System::Drawing::Point(549, 391);
@@ -2942,7 +2945,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label177
 			// 
 			this->label177->AutoSize = true;
-			this->label177->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label177->BackColor = System::Drawing::Color::Snow;
 			this->label177->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label177->Location = System::Drawing::Point(761, 369);
@@ -2955,7 +2958,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label178
 			// 
 			this->label178->AutoSize = true;
-			this->label178->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label178->BackColor = System::Drawing::Color::Snow;
 			this->label178->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label178->Location = System::Drawing::Point(738, 369);
@@ -2968,7 +2971,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label179
 			// 
 			this->label179->AutoSize = true;
-			this->label179->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label179->BackColor = System::Drawing::Color::Snow;
 			this->label179->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label179->Location = System::Drawing::Point(727, 370);
@@ -2981,7 +2984,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label180
 			// 
 			this->label180->AutoSize = true;
-			this->label180->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label180->BackColor = System::Drawing::Color::Snow;
 			this->label180->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label180->Location = System::Drawing::Point(706, 370);
@@ -2994,7 +2997,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label181
 			// 
 			this->label181->AutoSize = true;
-			this->label181->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label181->BackColor = System::Drawing::Color::Snow;
 			this->label181->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label181->Location = System::Drawing::Point(696, 370);
@@ -3007,7 +3010,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label182
 			// 
 			this->label182->AutoSize = true;
-			this->label182->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label182->BackColor = System::Drawing::Color::Snow;
 			this->label182->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label182->Location = System::Drawing::Point(673, 370);
@@ -3020,7 +3023,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label183
 			// 
 			this->label183->AutoSize = true;
-			this->label183->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label183->BackColor = System::Drawing::Color::Snow;
 			this->label183->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label183->Location = System::Drawing::Point(657, 370);
@@ -3033,7 +3036,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label184
 			// 
 			this->label184->AutoSize = true;
-			this->label184->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label184->BackColor = System::Drawing::Color::Snow;
 			this->label184->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label184->Location = System::Drawing::Point(634, 370);
@@ -3046,7 +3049,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label185
 			// 
 			this->label185->AutoSize = true;
-			this->label185->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label185->BackColor = System::Drawing::Color::Snow;
 			this->label185->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label185->Location = System::Drawing::Point(620, 370);
@@ -3059,7 +3062,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label186
 			// 
 			this->label186->AutoSize = true;
-			this->label186->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label186->BackColor = System::Drawing::Color::Snow;
 			this->label186->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label186->Location = System::Drawing::Point(597, 370);
@@ -3072,7 +3075,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label187
 			// 
 			this->label187->AutoSize = true;
-			this->label187->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label187->BackColor = System::Drawing::Color::Snow;
 			this->label187->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label187->Location = System::Drawing::Point(583, 371);
@@ -3085,7 +3088,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label188
 			// 
 			this->label188->AutoSize = true;
-			this->label188->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label188->BackColor = System::Drawing::Color::Snow;
 			this->label188->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label188->Location = System::Drawing::Point(564, 371);
@@ -3098,7 +3101,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label189
 			// 
 			this->label189->AutoSize = true;
-			this->label189->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label189->BackColor = System::Drawing::Color::Snow;
 			this->label189->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label189->Location = System::Drawing::Point(564, 525);
@@ -3111,7 +3114,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label190
 			// 
 			this->label190->AutoSize = true;
-			this->label190->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label190->BackColor = System::Drawing::Color::Snow;
 			this->label190->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label190->Location = System::Drawing::Point(549, 526);
@@ -3124,7 +3127,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label191
 			// 
 			this->label191->AutoSize = true;
-			this->label191->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label191->BackColor = System::Drawing::Color::Snow;
 			this->label191->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label191->Location = System::Drawing::Point(761, 508);
@@ -3137,7 +3140,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label192
 			// 
 			this->label192->AutoSize = true;
-			this->label192->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label192->BackColor = System::Drawing::Color::Snow;
 			this->label192->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label192->Location = System::Drawing::Point(738, 508);
@@ -3150,7 +3153,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label193
 			// 
 			this->label193->AutoSize = true;
-			this->label193->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label193->BackColor = System::Drawing::Color::Snow;
 			this->label193->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label193->Location = System::Drawing::Point(727, 508);
@@ -3163,7 +3166,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label194
 			// 
 			this->label194->AutoSize = true;
-			this->label194->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label194->BackColor = System::Drawing::Color::Snow;
 			this->label194->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label194->Location = System::Drawing::Point(706, 508);
@@ -3176,7 +3179,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label195
 			// 
 			this->label195->AutoSize = true;
-			this->label195->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label195->BackColor = System::Drawing::Color::Snow;
 			this->label195->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label195->Location = System::Drawing::Point(696, 508);
@@ -3189,7 +3192,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label196
 			// 
 			this->label196->AutoSize = true;
-			this->label196->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label196->BackColor = System::Drawing::Color::Snow;
 			this->label196->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label196->Location = System::Drawing::Point(673, 508);
@@ -3202,7 +3205,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label197
 			// 
 			this->label197->AutoSize = true;
-			this->label197->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label197->BackColor = System::Drawing::Color::Snow;
 			this->label197->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label197->Location = System::Drawing::Point(658, 508);
@@ -3215,7 +3218,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label198
 			// 
 			this->label198->AutoSize = true;
-			this->label198->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label198->BackColor = System::Drawing::Color::Snow;
 			this->label198->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label198->Location = System::Drawing::Point(620, 508);
@@ -3228,7 +3231,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label199
 			// 
 			this->label199->AutoSize = true;
-			this->label199->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label199->BackColor = System::Drawing::Color::Snow;
 			this->label199->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label199->Location = System::Drawing::Point(634, 508);
@@ -3241,7 +3244,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label200
 			// 
 			this->label200->AutoSize = true;
-			this->label200->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label200->BackColor = System::Drawing::Color::Snow;
 			this->label200->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label200->Location = System::Drawing::Point(597, 508);
@@ -3254,7 +3257,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label201
 			// 
 			this->label201->AutoSize = true;
-			this->label201->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label201->BackColor = System::Drawing::Color::Snow;
 			this->label201->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label201->Location = System::Drawing::Point(583, 508);
@@ -3267,7 +3270,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label202
 			// 
 			this->label202->AutoSize = true;
-			this->label202->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label202->BackColor = System::Drawing::Color::Snow;
 			this->label202->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label202->Location = System::Drawing::Point(564, 508);
@@ -3280,7 +3283,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label203
 			// 
 			this->label203->AutoSize = true;
-			this->label203->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label203->BackColor = System::Drawing::Color::Snow;
 			this->label203->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label203->Location = System::Drawing::Point(549, 508);
@@ -3293,7 +3296,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label204
 			// 
 			this->label204->AutoSize = true;
-			this->label204->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label204->BackColor = System::Drawing::Color::Snow;
 			this->label204->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label204->Location = System::Drawing::Point(763, 488);
@@ -3306,7 +3309,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label205
 			// 
 			this->label205->AutoSize = true;
-			this->label205->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label205->BackColor = System::Drawing::Color::Snow;
 			this->label205->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label205->Location = System::Drawing::Point(738, 488);
@@ -3319,7 +3322,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label206
 			// 
 			this->label206->AutoSize = true;
-			this->label206->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label206->BackColor = System::Drawing::Color::Snow;
 			this->label206->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label206->Location = System::Drawing::Point(727, 488);
@@ -3332,7 +3335,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label207
 			// 
 			this->label207->AutoSize = true;
-			this->label207->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label207->BackColor = System::Drawing::Color::Snow;
 			this->label207->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label207->Location = System::Drawing::Point(706, 488);
@@ -3345,7 +3348,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label208
 			// 
 			this->label208->AutoSize = true;
-			this->label208->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label208->BackColor = System::Drawing::Color::Snow;
 			this->label208->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label208->Location = System::Drawing::Point(696, 488);
@@ -3358,7 +3361,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label209
 			// 
 			this->label209->AutoSize = true;
-			this->label209->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label209->BackColor = System::Drawing::Color::Snow;
 			this->label209->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label209->Location = System::Drawing::Point(672, 488);
@@ -3371,7 +3374,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label210
 			// 
 			this->label210->AutoSize = true;
-			this->label210->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label210->BackColor = System::Drawing::Color::Snow;
 			this->label210->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label210->Location = System::Drawing::Point(658, 487);
@@ -3384,7 +3387,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label211
 			// 
 			this->label211->AutoSize = true;
-			this->label211->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label211->BackColor = System::Drawing::Color::Snow;
 			this->label211->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label211->Location = System::Drawing::Point(620, 488);
@@ -3397,7 +3400,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label212
 			// 
 			this->label212->AutoSize = true;
-			this->label212->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label212->BackColor = System::Drawing::Color::Snow;
 			this->label212->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label212->Location = System::Drawing::Point(634, 488);
@@ -3410,7 +3413,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label213
 			// 
 			this->label213->AutoSize = true;
-			this->label213->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label213->BackColor = System::Drawing::Color::Snow;
 			this->label213->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label213->Location = System::Drawing::Point(583, 488);
@@ -3423,7 +3426,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label214
 			// 
 			this->label214->AutoSize = true;
-			this->label214->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label214->BackColor = System::Drawing::Color::Snow;
 			this->label214->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label214->Location = System::Drawing::Point(597, 488);
@@ -3436,7 +3439,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label215
 			// 
 			this->label215->AutoSize = true;
-			this->label215->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label215->BackColor = System::Drawing::Color::Snow;
 			this->label215->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label215->Location = System::Drawing::Point(564, 488);
@@ -3449,10 +3452,10 @@ private: System::Windows::Forms::Label^ label240;
 			// label216
 			// 
 			this->label216->AutoSize = true;
-			this->label216->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label216->BackColor = System::Drawing::Color::Snow;
 			this->label216->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label216->Location = System::Drawing::Point(549, 488);
+			this->label216->Location = System::Drawing::Point(553, 488);
 			this->label216->Name = L"label216";
 			this->label216->Size = System::Drawing::Size(10, 9);
 			this->label216->TabIndex = 260;
@@ -3462,7 +3465,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label217
 			// 
 			this->label217->AutoSize = true;
-			this->label217->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label217->BackColor = System::Drawing::Color::Snow;
 			this->label217->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label217->Location = System::Drawing::Point(761, 466);
@@ -3475,7 +3478,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label218
 			// 
 			this->label218->AutoSize = true;
-			this->label218->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label218->BackColor = System::Drawing::Color::Snow;
 			this->label218->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label218->Location = System::Drawing::Point(738, 466);
@@ -3488,7 +3491,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label219
 			// 
 			this->label219->AutoSize = true;
-			this->label219->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label219->BackColor = System::Drawing::Color::Snow;
 			this->label219->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label219->Location = System::Drawing::Point(727, 467);
@@ -3501,7 +3504,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label220
 			// 
 			this->label220->AutoSize = true;
-			this->label220->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label220->BackColor = System::Drawing::Color::Snow;
 			this->label220->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label220->Location = System::Drawing::Point(706, 467);
@@ -3514,7 +3517,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label221
 			// 
 			this->label221->AutoSize = true;
-			this->label221->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label221->BackColor = System::Drawing::Color::Snow;
 			this->label221->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label221->Location = System::Drawing::Point(696, 467);
@@ -3527,7 +3530,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label222
 			// 
 			this->label222->AutoSize = true;
-			this->label222->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label222->BackColor = System::Drawing::Color::Snow;
 			this->label222->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label222->Location = System::Drawing::Point(673, 467);
@@ -3540,7 +3543,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label223
 			// 
 			this->label223->AutoSize = true;
-			this->label223->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label223->BackColor = System::Drawing::Color::Snow;
 			this->label223->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label223->Location = System::Drawing::Point(657, 467);
@@ -3553,7 +3556,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label224
 			// 
 			this->label224->AutoSize = true;
-			this->label224->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label224->BackColor = System::Drawing::Color::Snow;
 			this->label224->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label224->Location = System::Drawing::Point(634, 467);
@@ -3566,7 +3569,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label225
 			// 
 			this->label225->AutoSize = true;
-			this->label225->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label225->BackColor = System::Drawing::Color::Snow;
 			this->label225->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label225->Location = System::Drawing::Point(620, 467);
@@ -3579,7 +3582,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label226
 			// 
 			this->label226->AutoSize = true;
-			this->label226->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label226->BackColor = System::Drawing::Color::Snow;
 			this->label226->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label226->Location = System::Drawing::Point(597, 467);
@@ -3592,7 +3595,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label227
 			// 
 			this->label227->AutoSize = true;
-			this->label227->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label227->BackColor = System::Drawing::Color::Snow;
 			this->label227->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label227->Location = System::Drawing::Point(583, 468);
@@ -3605,7 +3608,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label228
 			// 
 			this->label228->AutoSize = true;
-			this->label228->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label228->BackColor = System::Drawing::Color::Snow;
 			this->label228->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label228->Location = System::Drawing::Point(564, 468);
@@ -3618,7 +3621,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label229
 			// 
 			this->label229->AutoSize = true;
-			this->label229->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label229->BackColor = System::Drawing::Color::Snow;
 			this->label229->Location = System::Drawing::Point(433, 557);
 			this->label229->Name = L"label229";
 			this->label229->Size = System::Drawing::Size(18, 13);
@@ -3629,7 +3632,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label230
 			// 
 			this->label230->AutoSize = true;
-			this->label230->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label230->BackColor = System::Drawing::Color::Snow;
 			this->label230->Location = System::Drawing::Point(459, 553);
 			this->label230->Name = L"label230";
 			this->label230->Size = System::Drawing::Size(25, 13);
@@ -3640,7 +3643,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label231
 			// 
 			this->label231->AutoSize = true;
-			this->label231->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label231->BackColor = System::Drawing::Color::Snow;
 			this->label231->Location = System::Drawing::Point(557, 552);
 			this->label231->Name = L"label231";
 			this->label231->Size = System::Drawing::Size(25, 13);
@@ -3651,7 +3654,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label232
 			// 
 			this->label232->AutoSize = true;
-			this->label232->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label232->BackColor = System::Drawing::Color::Snow;
 			this->label232->Location = System::Drawing::Point(531, 557);
 			this->label232->Name = L"label232";
 			this->label232->Size = System::Drawing::Size(18, 13);
@@ -3662,7 +3665,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label233
 			// 
 			this->label233->AutoSize = true;
-			this->label233->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label233->BackColor = System::Drawing::Color::Snow;
 			this->label233->Location = System::Drawing::Point(659, 551);
 			this->label233->Name = L"label233";
 			this->label233->Size = System::Drawing::Size(25, 13);
@@ -3673,7 +3676,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label234
 			// 
 			this->label234->AutoSize = true;
-			this->label234->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label234->BackColor = System::Drawing::Color::Snow;
 			this->label234->Location = System::Drawing::Point(633, 556);
 			this->label234->Name = L"label234";
 			this->label234->Size = System::Drawing::Size(18, 13);
@@ -3684,8 +3687,8 @@ private: System::Windows::Forms::Label^ label240;
 			// label235
 			// 
 			this->label235->AutoSize = true;
-			this->label235->BackColor = System::Drawing::Color::WhiteSmoke;
-			this->label235->Location = System::Drawing::Point(457, 548);
+			this->label235->BackColor = System::Drawing::Color::Snow;
+			this->label235->Location = System::Drawing::Point(457, 545);
 			this->label235->Name = L"label235";
 			this->label235->Size = System::Drawing::Size(28, 13);
 			this->label235->TabIndex = 294;
@@ -3695,7 +3698,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label236
 			// 
 			this->label236->AutoSize = true;
-			this->label236->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label236->BackColor = System::Drawing::Color::Snow;
 			this->label236->Location = System::Drawing::Point(460, 569);
 			this->label236->Name = L"label236";
 			this->label236->Size = System::Drawing::Size(22, 13);
@@ -3706,7 +3709,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label237
 			// 
 			this->label237->AutoSize = true;
-			this->label237->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label237->BackColor = System::Drawing::Color::Snow;
 			this->label237->Location = System::Drawing::Point(559, 570);
 			this->label237->Name = L"label237";
 			this->label237->Size = System::Drawing::Size(22, 13);
@@ -3717,8 +3720,8 @@ private: System::Windows::Forms::Label^ label240;
 			// label238
 			// 
 			this->label238->AutoSize = true;
-			this->label238->BackColor = System::Drawing::Color::WhiteSmoke;
-			this->label238->Location = System::Drawing::Point(559, 548);
+			this->label238->BackColor = System::Drawing::Color::Snow;
+			this->label238->Location = System::Drawing::Point(559, 545);
 			this->label238->Name = L"label238";
 			this->label238->Size = System::Drawing::Size(28, 13);
 			this->label238->TabIndex = 297;
@@ -3728,7 +3731,7 @@ private: System::Windows::Forms::Label^ label240;
 			// label239
 			// 
 			this->label239->AutoSize = true;
-			this->label239->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->label239->BackColor = System::Drawing::Color::Snow;
 			this->label239->Location = System::Drawing::Point(662, 570);
 			this->label239->Name = L"label239";
 			this->label239->Size = System::Drawing::Size(22, 13);
@@ -3739,18 +3742,41 @@ private: System::Windows::Forms::Label^ label240;
 			// label240
 			// 
 			this->label240->AutoSize = true;
-			this->label240->BackColor = System::Drawing::Color::WhiteSmoke;
-			this->label240->Location = System::Drawing::Point(660, 548);
+			this->label240->BackColor = System::Drawing::Color::Snow;
+			this->label240->Location = System::Drawing::Point(660, 545);
 			this->label240->Name = L"label240";
 			this->label240->Size = System::Drawing::Size(28, 13);
 			this->label240->TabIndex = 299;
 			this->label240->Text = L"det3";
 			this->label240->Visible = false;
 			// 
+			// label305
+			// 
+			this->label305->BackColor = System::Drawing::Color::Snow;
+			this->label305->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->label305->Font = (gcnew System::Drawing::Font(L"Candara Light", 48, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label305->Location = System::Drawing::Point(414, 131);
+			this->label305->Name = L"label305";
+			this->label305->Size = System::Drawing::Size(369, 456);
+			this->label305->TabIndex = 303;
+			// 
+			// pictureBox1
+			// 
+			this->pictureBox1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.BackgroundImage")));
+			this->pictureBox1->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->pictureBox1->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->pictureBox1->Location = System::Drawing::Point(0, 0);
+			this->pictureBox1->Name = L"pictureBox1";
+			this->pictureBox1->Size = System::Drawing::Size(795, 600);
+			this->pictureBox1->TabIndex = 302;
+			this->pictureBox1->TabStop = false;
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(96, 96);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Dpi;
+			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Center;
 			this->ClientSize = System::Drawing::Size(795, 600);
 			this->Controls->Add(this->label240);
 			this->Controls->Add(this->label239);
@@ -3934,8 +3960,6 @@ private: System::Windows::Forms::Label^ label240;
 			this->Controls->Add(this->label60);
 			this->Controls->Add(this->label61);
 			this->Controls->Add(this->label62);
-			this->Controls->Add(this->label63);
-			this->Controls->Add(this->label64);
 			this->Controls->Add(this->label41);
 			this->Controls->Add(this->label42);
 			this->Controls->Add(this->label43);
@@ -3946,8 +3970,6 @@ private: System::Windows::Forms::Label^ label240;
 			this->Controls->Add(this->label48);
 			this->Controls->Add(this->label49);
 			this->Controls->Add(this->label50);
-			this->Controls->Add(this->label51);
-			this->Controls->Add(this->label52);
 			this->Controls->Add(this->label29);
 			this->Controls->Add(this->label30);
 			this->Controls->Add(this->label31);
@@ -3958,8 +3980,6 @@ private: System::Windows::Forms::Label^ label240;
 			this->Controls->Add(this->label36);
 			this->Controls->Add(this->label37);
 			this->Controls->Add(this->label38);
-			this->Controls->Add(this->label39);
-			this->Controls->Add(this->label40);
 			this->Controls->Add(this->label27);
 			this->Controls->Add(this->label28);
 			this->Controls->Add(this->label26);
@@ -3996,19 +4016,27 @@ private: System::Windows::Forms::Label^ label240;
 			this->Controls->Add(this->textBox4);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label3);
-			this->Controls->Add(this->label4);
 			this->Controls->Add(this->label12);
-			this->Controls->Add(this->label13);
-			this->Controls->Add(this->label18);
 			this->Controls->Add(this->label65);
+			this->Controls->Add(this->label4);
+			this->Controls->Add(this->label13);
 			this->Controls->Add(this->label17);
+			this->Controls->Add(this->label18);
+			this->Controls->Add(this->label39);
+			this->Controls->Add(this->label40);
+			this->Controls->Add(this->label51);
+			this->Controls->Add(this->label52);
+			this->Controls->Add(this->label63);
+			this->Controls->Add(this->label64);
 			this->Controls->Add(this->label230);
 			this->Controls->Add(this->label231);
 			this->Controls->Add(this->label233);
-			this->Controls->Add(this->label16);
+			this->Controls->Add(this->label305);
+			this->Controls->Add(this->pictureBox1);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Name = L"MyForm";
 			this->Text = L"MyForm";
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -4026,7 +4054,7 @@ private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e
 	for (int i = 0; i < numbers->Length; i++)
 		numbers[i]->Text = "";
 	//Матрица 1
-	array<Label^>^ labels = { label15, label16, label17, label18, label19, label20, label21, label22, label23, label24, label25, label26, label27, label28 };
+	array<Label^>^ labels = { label15, label305, label17, label18, label19, label20, label21, label22, label23, label24, label25, label26, label27, label28};
 	for (int i = 0; i < labels->Length; i++)
 		labels[i]->Visible = false;
 	//Матрица 2
@@ -4042,9 +4070,9 @@ private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e
 	for (int i = 0; i < labels4->Length; i++)
 		labels4[i]->Visible = false;
 	//Надписи определителей
-	array<Label^>^ det = { label65, label66, label67, label68 };
-	for (int i = 0; i < det->Length; i++)
-		det[i]->Visible = false;
+	array<Label^>^ detl = { label65, label66, label67, label68 };
+	for (int i = 0; i < detl->Length; i++)
+		detl[i]->Visible = false;
 	//Решение матрица 1
 	array<Label^>^ labels5 = {label69, label70, label71, label72, label73, label74, label75, label76, label77, label78, label79, label80, label81, label82, label83, label84, label85, label86, label87, label88, label89, label90, label91, label92, label93, label94, label95 ,label96, label97, label98, label99, label100, label101, label102, label103, label104, label105, label106};
 	for (int i = 0; i < labels5->Length; i++)
@@ -4062,7 +4090,7 @@ private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e
 	for (int i = 0; i < labels8->Length; i++)
 		labels8[i]->Visible = false;
 	//Решение xyz
-	array<Label^>^ xyz = { label229, label234, label231, label232, label230, label233, label235, label236, label238, label237, label240, label239 };
+	array<Label^>^ xyz = { label230, label229, label234, label231, label232, label233, label235, label236, label238, label237, label240, label239 };
 	for (int i = 0; i < xyz->Length; i++)
 		xyz[i]->Visible = false;
 }
@@ -4073,7 +4101,7 @@ private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^
 	double a11, a12, a13, a21, a22, a23, a31, a32, a33, b1, b2, b3;
 	double det, det1, det2, det3;
 	//Матрица 1
-	array<Label^>^ labels = { label15, label16, label17, label18, label19, label20, label21, label22, label23, label24, label25, label26, label27, label28 };
+	array<Label^>^ labels = { label15, label305, label17, label18, label19, label20, label21, label22, label23, label24, label25, label26, label27, label28 };
 	//Матрица 2
 	array<Label^>^ labels2 = { label38, label37, label36, label35, label34, label33, label32, label31, label29, label30, label39, label40 };
 	//Матрица 3
@@ -4280,7 +4308,7 @@ private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^
 		for (int i = 0; i < labels8->Length; i++)
 			labels8[i]->Visible = true;
 		//x y z
-		array<Label^>^ xyz = { label229, label234, label231, label232, label230, label233, label235, label236, label238, label237, label240, label239 };
+		array<Label^>^ xyz = { label230, label229, label234, label231, label232, label233, label235, label236, label238, label237, label240, label239 };
 		for (int i = 0; i < xyz->Length; i++)
 			xyz[i]->Visible = true;
 	}
