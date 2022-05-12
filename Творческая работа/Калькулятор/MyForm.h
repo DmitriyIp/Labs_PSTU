@@ -3758,7 +3758,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox1;
 				static_cast<System::Byte>(0)));
 			this->label305->Location = System::Drawing::Point(414, 131);
 			this->label305->Name = L"label305";
-			this->label305->Size = System::Drawing::Size(369, 456);
+			this->label305->Size = System::Drawing::Size(369, 460);
 			this->label305->TabIndex = 303;
 			// 
 			// pictureBox1
@@ -4054,7 +4054,7 @@ private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e
 	for (int i = 0; i < numbers->Length; i++)
 		numbers[i]->Text = "";
 	//Матрица 1
-	array<Label^>^ labels = { label15, label305, label17, label18, label19, label20, label21, label22, label23, label24, label25, label26, label27, label28};
+	array<Label^>^ labels = { label17, label18, label19, label20, label21, label22, label23, label24, label25, label26, label27, label28};
 	for (int i = 0; i < labels->Length; i++)
 		labels[i]->Visible = false;
 	//Матрица 2
@@ -4101,7 +4101,7 @@ private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^
 	double a11, a12, a13, a21, a22, a23, a31, a32, a33, b1, b2, b3;
 	double det, det1, det2, det3;
 	//Матрица 1
-	array<Label^>^ labels = { label15, label305, label17, label18, label19, label20, label21, label22, label23, label24, label25, label26, label27, label28 };
+	array<Label^>^ labels = {  label17, label18, label19, label20, label21, label22, label23, label24, label25, label26, label27, label28 };
 	//Матрица 2
 	array<Label^>^ labels2 = { label38, label37, label36, label35, label34, label33, label32, label31, label29, label30, label39, label40 };
 	//Матрица 3
@@ -4239,7 +4239,7 @@ private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^
 
 		//Передаем значение из текстбоксов в поля решения и делаем решение видимым
 		//Матрица 1
-		for (int i = 4, j = 0; i < labels->Length - 1; i++)
+		for (int i = 2, j = 0; i < labels->Length - 1; i++)
 		{
 			labels[i]->Text = numbers[j]->Text;
 			j++;
