@@ -4042,10 +4042,10 @@ private: System::Windows::Forms::PictureBox^ pictureBox1;
 
 		}
 #pragma endregion
+//Кнопка очистить
 private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) 
 {
-	//Кнопка очистить
-	
+
 	label5->Text = "";
 	label6->Text = "";
 	label7->Text = "";
@@ -4094,9 +4094,10 @@ private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e
 	for (int i = 0; i < xyz->Length; i++)
 		xyz[i]->Visible = false;
 }
+
+//Кнопка посчитать
 private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^ e) 
 {
-	//Кнопка посчитать
 
 	double a11, a12, a13, a21, a22, a23, a31, a32, a33, b1, b2, b3;
 	double det, det1, det2, det3;
@@ -4141,10 +4142,16 @@ private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^
 		det2 = (a11 * b2 * a33 + b1 * a23 * a31 + a21 * b3 * a13) - (a13 * b2 * a31 + b1 * a21 * a33 + a11 * a23 * b3); // определитель матрицы, где второй столбец-столбец свободных членов
 		det3 = (a11 * a22 * b3 + a12 * b2 * a31 + a21 * a32 * b1) - (b1 * a22 * a31 + a12 * a21 * b3 + a11 * b2 * a32); // определитель матрицы, где третий столбец-столбец свободных членов
 		//Вписываем результат
-		label5->Text = Convert::ToString(det1 / det);
-		label6->Text = Convert::ToString(det2 / det);
-		label7->Text = Convert::ToString(det3 / det);
 
+		//x
+		label5->Text = Convert::ToString(det1 / det);
+		//y
+		label6->Text = Convert::ToString(det2 / det);
+		//z
+		label7->Text = Convert::ToString(det3 / det);
+		
+		//Передаем значения из текстбоксов в текст, который находится в решении
+		//Главный определитель
 		label69->Text = textBox1->Text;
 		label71->Text = textBox5->Text;
 		label73->Text = textBox9->Text;
@@ -4165,6 +4172,7 @@ private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^
 		label103->Text = textBox8->Text;
 		label106->Text = Convert::ToString(det);
 
+		//Первый вспомогательный определитель
 		label109->Text = textBox13->Text;
 		label111->Text = textBox5->Text;
 		label113->Text = textBox9->Text;
@@ -4185,6 +4193,7 @@ private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^
 		label145->Text = textBox8->Text;
 		label148->Text = Convert::ToString(det1);
 
+		//Второй вспомогательный определитель
 		label188->Text = textBox1->Text;
 		label186->Text = textBox14->Text;
 		label184->Text = textBox9->Text;
@@ -4205,6 +4214,7 @@ private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^
 		label152->Text = textBox15->Text;
 		label149->Text = Convert::ToString(det2);
 
+		//Третий вспомогательный определитель
 		label228->Text = textBox1->Text;
 		label226->Text = textBox5->Text;
 		label224->Text = textBox15->Text;
@@ -4225,6 +4235,7 @@ private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^
 		label192->Text = textBox8->Text;
 		label189->Text = Convert::ToString(det3);
 
+		//x y z
 		label235->Text = Convert::ToString(det1);
 		label236->Text = Convert::ToString(det);
 		label238->Text = Convert::ToString(det2);
@@ -4245,7 +4256,6 @@ private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^
 			j++;
 		}
 		//Матрица 2
-		//32 35 38       13 14 15
 		label32->Text = textBox15->Text;
 		label35->Text = textBox14->Text;
 		label38->Text = textBox13->Text;
@@ -4256,7 +4266,7 @@ private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^
 			labels2[i]->Text = numbers[i]->Text;
 		}
 
-		//Матрица 3 49 46 43
+		//Матрица 3
 		label49->Text = textBox13->Text;
 		label46->Text = textBox14->Text;
 		label43->Text = textBox15->Text;
@@ -4267,7 +4277,7 @@ private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^
 			labels3[i]->Text = numbers[i]->Text;
 		}
 
-		//Матрица 4  60 57 53
+		//Матрица 4 
 		label60->Text = textBox13->Text;
 		label57->Text = textBox14->Text;
 		label53->Text = textBox15->Text;
@@ -4314,6 +4324,9 @@ private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^
 	}
 	
 }
+//Здесь написаны все исключения для полей ввода коэффициентов
+//В каждый из них разрешается писать только цифры и знак "-", а также отслеживается то, чтобы знак "-" стоял в поле один раз и только в начале
+//Поле 1
 private: System::Void textBox1_KeyPress(System::Object^ sender, System::Windows::Forms::KeyPressEventArgs^ e) {
 	char number = e->KeyChar;
 	textBox1->MaxLength = 4;
@@ -4330,6 +4343,7 @@ private: System::Void textBox1_KeyPress(System::Object^ sender, System::Windows:
 	if (e->KeyChar == 45 && textBox1->SelectionStart != 0 && text != "")
 		e->Handled = true;
 }
+//Поле 2
 private: System::Void textBox2_KeyPress(System::Object^ sender, System::Windows::Forms::KeyPressEventArgs^ e) {
 	char number = e->KeyChar;
 	textBox2->MaxLength = 4;
@@ -4346,6 +4360,7 @@ private: System::Void textBox2_KeyPress(System::Object^ sender, System::Windows:
 	if (e->KeyChar == 45 && textBox2->SelectionStart != 0 && text != "")
 		e->Handled = true;
 }
+//Поле 3
 private: System::Void textBox3_KeyPress(System::Object^ sender, System::Windows::Forms::KeyPressEventArgs^ e) {
 	char number = e->KeyChar;
 	textBox3->MaxLength = 4;
@@ -4362,6 +4377,7 @@ private: System::Void textBox3_KeyPress(System::Object^ sender, System::Windows:
 	if (e->KeyChar == 45 && textBox3->SelectionStart != 0 && text != "")
 		e->Handled = true;
 }
+//Поле 13 (свободный член после знака "=")
 private: System::Void textBox13_KeyPress(System::Object^ sender, System::Windows::Forms::KeyPressEventArgs^ e) {
 	char number = e->KeyChar;
 	textBox13->MaxLength = 4;
@@ -4378,6 +4394,7 @@ private: System::Void textBox13_KeyPress(System::Object^ sender, System::Windows
 	if (e->KeyChar == 45 && textBox13->SelectionStart != 0 && text != "")
 		e->Handled = true;
 }
+//Поле 4
 private: System::Void textBox4_KeyPress(System::Object^ sender, System::Windows::Forms::KeyPressEventArgs^ e) {
 	char number = e->KeyChar;
 	textBox4->MaxLength = 4;
@@ -4394,6 +4411,7 @@ private: System::Void textBox4_KeyPress(System::Object^ sender, System::Windows:
 	if (e->KeyChar == 45 && textBox4->SelectionStart != 0 && text != "")
 		e->Handled = true;
 }
+//Поле 5
 private: System::Void textBox5_KeyPress(System::Object^ sender, System::Windows::Forms::KeyPressEventArgs^ e) {
 	char number = e->KeyChar;
 	textBox5->MaxLength = 4;
@@ -4410,6 +4428,7 @@ private: System::Void textBox5_KeyPress(System::Object^ sender, System::Windows:
 	if (e->KeyChar == 45 && textBox5->SelectionStart != 0 && text != "")
 		e->Handled = true;
 }
+//Поле 6
 private: System::Void textBox6_KeyPress(System::Object^ sender, System::Windows::Forms::KeyPressEventArgs^ e) {
 	char number = e->KeyChar;
 	textBox6->MaxLength = 4;
@@ -4426,6 +4445,7 @@ private: System::Void textBox6_KeyPress(System::Object^ sender, System::Windows:
 	if (e->KeyChar == 45 && textBox6->SelectionStart != 0 && text != "")
 		e->Handled = true;
 }
+//Поле 14 (свободный член после знака "=")
 private: System::Void textBox14_KeyPress(System::Object^ sender, System::Windows::Forms::KeyPressEventArgs^ e) {
 	char number = e->KeyChar;
 	textBox14->MaxLength = 4;
@@ -4442,6 +4462,7 @@ private: System::Void textBox14_KeyPress(System::Object^ sender, System::Windows
 	if (e->KeyChar == 45 && textBox14->SelectionStart != 0 && text != "")
 		e->Handled = true;
 }
+//Поле 7
 private: System::Void textBox7_KeyPress(System::Object^ sender, System::Windows::Forms::KeyPressEventArgs^ e) {
 	char number = e->KeyChar;
 	textBox7->MaxLength = 4;
@@ -4458,6 +4479,7 @@ private: System::Void textBox7_KeyPress(System::Object^ sender, System::Windows:
 	if (e->KeyChar == 45 && textBox7->SelectionStart != 0 && text != "")
 		e->Handled = true;
 }
+//Поле 8
 private: System::Void textBox8_KeyPress(System::Object^ sender, System::Windows::Forms::KeyPressEventArgs^ e) {
 	char number = e->KeyChar;
 	textBox8->MaxLength = 4;
@@ -4474,6 +4496,7 @@ private: System::Void textBox8_KeyPress(System::Object^ sender, System::Windows:
 	if (e->KeyChar == 45 && textBox8->SelectionStart != 0 && text != "")
 		e->Handled = true;
 }
+//Поле 9
 private: System::Void textBox9_KeyPress(System::Object^ sender, System::Windows::Forms::KeyPressEventArgs^ e) {
 	char number = e->KeyChar;
 	textBox9->MaxLength = 4;
@@ -4490,6 +4513,7 @@ private: System::Void textBox9_KeyPress(System::Object^ sender, System::Windows:
 	if (e->KeyChar == 45 && textBox9->SelectionStart != 0 && text != "")
 		e->Handled = true;
 }
+//Поле 15 (свободный член после знака "="
 private: System::Void textBox15_KeyPress(System::Object^ sender, System::Windows::Forms::KeyPressEventArgs^ e) {
 
 	char number = e->KeyChar;
