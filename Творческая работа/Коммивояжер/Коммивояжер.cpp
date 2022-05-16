@@ -3,20 +3,24 @@
 using namespace std;
 using namespace sf;
 
+//Структура под граф с оценкой нулей
 struct zerorate
 {
 	int num;
 	int rate;
 };
+//Структура под пути (от города к городу)
 struct way
 {
 	int first;
 	int second;
 };
 
+//Структура под упорядоченный путь (города по порядку)
 int ways2[8];
 int result = 0;
 
+//Функция для печати графа
 void print_graph(int ROW, int COL, zerorate (&a)[7][7])
 {
 	cout << "Наш исходный граф:\n";
@@ -37,50 +41,60 @@ void print_graph(int ROW, int COL, zerorate (&a)[7][7])
 	}
 	cout << "\n";
 }
-
+//Функция которая выполняет действия для нахождения пути и расстояния методом ветвей и границ
 void reduction(int ROW, int COL, zerorate(&a)[7][7], int (&b)[7][7])
 {
 	
 		int min = 1000;
 		int rowmin[7][1]={};
 		cout << "Ищем минимум по строкам:\n";
+		//Проходим весь граф циклами
 		for (int i = 0; i < ROW; i++)
 		{
 			min = 1000;
 			for (int j = 0; j < COL; j++)
 			{
+				//Там где нет путей, то есть стоит "-1" выводим как букву "М"
 				if (a[i][j].num == -1)
 				{
 					cout << "M\t";
 				}
+				//Если же путь есть, то выводим его
 				else
 				{
 					cout << a[i][j].num << "\t";
 				}
+				//Ищем минимальное значение в строке
 				if (a[i][j].num < min && a[i][j].num != -1 && a[i][j].num != 0)
 				{
 					min = a[i][j].num;
 				}
 
 			}
+			//В массив с минимальными числами записываем минимальное в строке
 			rowmin[i][0] = min;
+			//Выводим минимальные значение справа от графа через черточку
 			cout << "|" << min;
 			cout << endl;
 		}
 		cout << "\n";
 		cout << "Редуцируем по строкам:\n";
+		//Проходим весь граф циклами
 		for (int i = 0; i < ROW; i++)
 		{
 			for (int j = 0; j < COL; j++)
 			{
+				//Если путь есть и он не равен нулю, то вычитаем мз него минимальное значение в соответствии со строкой
 				if (a[i][j].num != -1 && a[i][j].num != 0)
 				{
 					a[i][j].num = a[i][j].num - rowmin[i][0];
 				}
+				//Там где нет путей, то есть стоит "-1" выводим как букву "М"
 				if (a[i][j].num == -1)
 				{
 					cout << "M\t";
 				}
+				//Если же путь есть, то выводим его
 				else
 				{
 					cout << a[i][j].num << "\t";
@@ -92,56 +106,68 @@ void reduction(int ROW, int COL, zerorate(&a)[7][7], int (&b)[7][7])
 		cout << "Ищем минимум по столбцам:\n";
 		min = 1000;
 		int colmin[1][7] = {};
+		//Проходим весь граф циклами
 		for (int j = 0; j < COL; j++)
 		{
 			min = 1000;
 			for (int i = 0; i < ROW; i++)
 			{
+				//Там где нет путей, то есть стоит "-1" выводим как букву "М"
 				if (a[i][j].num == -1)
 				{
 					cout << "M\t";
 				}
+				//Если же путь есть, то выводим его
 				else
 				{
 					cout << a[j][i].num << "\t";
 				}
+				//Ищем минимальное значение по столбцам
 				if (a[i][j].num < min && a[i][j].num != -1 && i != j)
 				{
 					min = a[i][j].num;
 				}
 			}
+			//Записываем минимальное число в массив с минимальными числами из столбцов
 			colmin[0][j] = min;
 			cout << endl;
 		}
+		//Выводим черточки, отделяющие минимальные значения по столбцам от графа
 		for (int i = 0; i < 7; i++)
 		{
 			cout << "_\t";
 		}
 		cout << '\n';
+		//Выводим минимальные значения из столбцов
 		for (int i = 0; i < 7; i++)
 		{
 			cout << colmin[0][i] << "\t";
 		}
 
 		cout << "\n\nРедуцируем по столбцам:\n";
+		//Проходим граф циклами for
 		for (int j = 0; j < COL; j++)
 		{
 			for (int i = 0; i < ROW; i++)
 			{
+				//Вычитаем минимальное значение по столбцам из каждого соответсвующего элемента
 				if (a[i][j].num != -1 && a[i][j].num != 0)
 				{
 					a[i][j].num = a[i][j].num - colmin[0][j];
 				}
 			}
 		}
+		//Проходим граф циклами for
 		for (int j = 0; j < COL; j++)
 		{
 			for (int i = 0; i < ROW; i++)
 			{
+				//Там где нет путей, то есть стоит "-1" выводим как букву "М"
 				if (a[i][j].num == -1)
 				{
 					cout << "M\t";
 				}
+				//Если же путь есть, то выводим его
 				else
 				{
 					cout << a[j][i].num << '\t';
@@ -150,14 +176,17 @@ void reduction(int ROW, int COL, zerorate(&a)[7][7], int (&b)[7][7])
 			cout << endl;
 		}
 		cout << "\nОцениваем нули:\n";
+		//Проходим граф циклами for
 		for (int i = 0; i < 7; i++)
 		{
 			int min = 1000;
 			for (int j = 0; j < 7; j++)
 			{
+				//Если элемент равен нулю и не находится на главной диагонали
 				if (a[i][j].num == 0 && i != j)
 				{
 					int sum = 0;
+					//Складываем оценку нуля по столбцам (ищем минимальный элемент в столбце, где находится ноль)
 					for (int z = 0; z < 7; z++)
 					{
 						if (a[i][z].num < min && i != z && a[i][z].num != -1 && z != j)
@@ -167,6 +196,7 @@ void reduction(int ROW, int COL, zerorate(&a)[7][7], int (&b)[7][7])
 					}
 					sum += min;
 					min = 1000;
+					//Складываем оценку нуля по строкам (ищем минимальный элемент в строке, где находится ноль)
 					for (int o = 0; o < 7; o++)
 					{
 						if (a[o][j].num < min && a[o][j].num != -1 && o != j && o != i)
@@ -174,18 +204,24 @@ void reduction(int ROW, int COL, zerorate(&a)[7][7], int (&b)[7][7])
 							min = a[o][j].num;
 						}
 					}
+					//Складываем оценку из минимального элемента по строке и столбцу
 					sum += min;
+					//Записываем оценку в соответсвующий нулю элемент
 					a[i][j].rate = sum;
+					//Обнуляем сумму
 					sum = 0;
 				}
+				//Там где нет путей, то есть стоит "-1" выводим как букву "М"
 				if (a[i][j].num == -1)
 				{
 					cout << "M\t";
 				}
+				//Там где стоит ноль и он не находится на главной диагонали, то выводим его и рядом оценку в скобках
 				else if (a[i][j].num == 0 && i != j)
 				{
 					cout << a[i][j].num << '(' << a[i][j].rate << ')' << "\t";
 				}
+				//Если же есть путь и это не ноль, то выводим его
 				else
 				{
 					cout << a[i][j].num << "\t";
@@ -193,13 +229,16 @@ void reduction(int ROW, int COL, zerorate(&a)[7][7], int (&b)[7][7])
 			}
 			cout << endl;
 		}
+		//Создаем массив ways с типом данных way(структура с полями first, second, в которые будут записываться город, из которого идем, и город, в который идем
 		way ways[7];
 		cout << "Ищем пути:\n";
 		for (int k = 0; k < 4; k++)
 		{
 			int max = -1000;
+			//Объявляем переменные в которые будут записываться номер строки и столбца в которых находится ноль с наибольшей оценкой
 			int maxcolidx = 0;
 			int maxrowidx = 0;
+			//Проходим по графу циклами for
 			for (int i = 0; i < ROW; i++)
 			{
 				for (int j = 0; j < COL; j++)
@@ -212,27 +251,33 @@ void reduction(int ROW, int COL, zerorate(&a)[7][7], int (&b)[7][7])
 					}
 				}
 			}
+			//Заменяем соответсвующий нулю с наибольшей оценкой столбец на буквы "М"
 			for (int z = 0, g = 0; z < 7; z++)
 			{
 				a[maxrowidx][g].num = -1;
 				a[maxrowidx][g].rate = 0;
 				g++;
 			}
+			//Заменяем соответсвующую нулю с наибольшей оценкой строку на буквы "М"
 			for (int o = 0, n = 0; o < 7; o++)
 			{
 				a[n][maxcolidx].num = -1;
 				a[n][maxcolidx].rate = 0;
 				n++;
 			}
+			//Меняем те же города местами и заменяем путь на букву М, то есть ставим там -1
 			a[maxcolidx][maxrowidx].num = -1;
 			a[maxcolidx][maxrowidx].rate = 0;
+			//Записываем в массив с путями города
 			ways[k].first = maxrowidx + 1;
 			ways[k].second = maxcolidx + 1;
 			result += b[maxrowidx][maxcolidx];
 		}
+		//Объявляем переменные под индексы строк и столбцов, чтобы записать оставшиеся после удаления путей пути
 		int colidx = 0;
 		int rowidx = 0;
 		int idx = 4;
+		//Проходим граф циклами for
 		for (int i = 0; i < ROW; i++)
 		{
 			for (int j = 0; j < COL; j++)
@@ -250,14 +295,17 @@ void reduction(int ROW, int COL, zerorate(&a)[7][7], int (&b)[7][7])
 
 		}
 		cout << "Вывод получившегося графа после операций:\n";
+		//Проходим граф циклами for
 		for (int i = 0; i < ROW; i++)
 		{
 			for (int j = 0; j < COL; j++)
 			{
+				//Там где нет путей, то есть стоит "-1" выводим как букву "М"
 				if (a[i][j].num == -1)
 				{
 					cout << "M\t";
 				}
+				//Если же есть путь, то выводим его
 				else
 				{
 					cout << a[i][j].num << "\t";
@@ -267,6 +315,7 @@ void reduction(int ROW, int COL, zerorate(&a)[7][7], int (&b)[7][7])
 		}
 		cout << "Вывод пути:\n";
 		int ch = 1;
+		//Расставляем путь в массиве по порядку
 		for (int i = 0; i < 8; i++)
 		{
 			for (int j = 0; j < 7; j++)
@@ -279,6 +328,7 @@ void reduction(int ROW, int COL, zerorate(&a)[7][7], int (&b)[7][7])
 				}
 			}
 		}
+		//Выводим путь
 		for (int i = 0; i < 8; i++)
 		{
 			if (i != 7)
@@ -314,9 +364,14 @@ int main()
 					  {12,-1, -1, -1, 47, 26, 0} };
 	print_graph(ROW, COL, mas);
 	reduction(ROW, COL, mas, mas2);
+	
 
+	//Отрисовка
+	//Задаем размеры окна и способ отображения, название окна
 	RenderWindow window(VideoMode(670, 400), "Graph");
+	//Создаем окружность с радиусом 30, Отрисовкой в 1000 точек
 	CircleShape shape(30.f, 1000);
+	//Задаем обводку окружности в 3 пикселя и ставим ей черный цвет
 	shape.setOutlineThickness(3);
 	shape.setOutlineColor(Color::Black);
 	Text text;
@@ -390,7 +445,7 @@ int main()
 		text.setPosition(524, 35);
 		window.draw(text);
 
-		//Задаем позиции линий
+		//Задаем позиции линий и также отрисовываем их
 		sf::VertexArray lines_7_6(sf::Lines, 16);
 		lines_7_6[0].position = sf::Vector2f(122, 110);
 		lines_7_6[1].position = sf::Vector2f(104, 168);
@@ -461,7 +516,7 @@ int main()
 		lines_1_2[1].color = sf::Color::Black;
 		window.draw(lines_1_2);
 
-		//Подписываем длины дорог
+		//Подписываем длины дорог и выполняем отрисовку
 		//a7_1, где 7 и 1 - номера городов также и для остальных
 		string a7_1 = to_string(mas2[6][0]);
 		text.setString(a7_1);
