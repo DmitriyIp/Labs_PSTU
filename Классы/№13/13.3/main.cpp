@@ -40,7 +40,7 @@ void add_max_elem(Tset& a)//добавить макс элемент
 
 void del_elem(Tset& a, int n1, int n2)//удалить элементы из промежутка [n1; n2]
 {
-	if (n1 > a.size() || n2 > a.size() || n1 > n2) { cout << "Error!\n"; return; }
+	if (n1 > a.size() || n2 > a.size() || n1 > n2) { cout << "ОШИБКА!!!\n"; return; }
 
 	it i = a.begin();
 	int k = 1;
@@ -97,25 +97,26 @@ bool operator< (const Pair& a, const Pair& b)//перегрузка оператора <, необходим
 
 int main()
 {
+	setlocale(LC_ALL, "rus");
 	int n;
-	cout << "Enter n >> "; cin >> n;
+	cout << "Введите количество элементов в множестве >> "; cin >> n;
 
 	Tset a = make_set(n);
-	cout << "\nYour set:\n";
+	cout << "\nНаше множество:\n";
 	print_set(a);
 
 	add_max_elem(a);//т.к у нас множество без дубликатов, то ничего не добавится
-	cout << "\nAdd max elem:\n";
+	cout << "\nДобавляем максимальный элемент:\n";
 	print_set(a);
 
 	int n1, n2;
-	cout << "\nEnter n1, n2 >> "; cin >> n1 >> n2;
+	cout << "\nВведите промежуток из которого будут удаляться элементы >> "; cin >> n1 >> n2;
 	del_elem(a, n1, n2);
 	print_set(a);
 
 	s = avereage(a);
 	add_elem(a, s);//т.к. значения хранятся как const, то операции с ними невозможны, т.е for_each использовать невозможно
-	cout << "\nAvereage: " << s << "\nAdd avereage : \n";
+	cout << "\nСреднее значение элементов в множестве: " << s << "\nПрибавляем средний элемент ко всем элементам множества : \n";
 	print_set(a);
 
 	return 0;
