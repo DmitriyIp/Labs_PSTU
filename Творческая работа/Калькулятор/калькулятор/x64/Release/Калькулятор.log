@@ -1,0 +1,18 @@
+﻿  MyForm.cpp
+C:\Users\ipato\source\repos\КАЛЬКУЛЯТОР\Калькулятор\MyForm.h(4331,14): warning C4244: инициализация: преобразование "wchar_t" в "char", возможна потеря данных
+C:\Users\ipato\source\repos\КАЛЬКУЛЯТОР\Калькулятор\MyForm.h(4348,14): warning C4244: инициализация: преобразование "wchar_t" в "char", возможна потеря данных
+C:\Users\ipato\source\repos\КАЛЬКУЛЯТОР\Калькулятор\MyForm.h(4365,14): warning C4244: инициализация: преобразование "wchar_t" в "char", возможна потеря данных
+C:\Users\ipato\source\repos\КАЛЬКУЛЯТОР\Калькулятор\MyForm.h(4382,14): warning C4244: инициализация: преобразование "wchar_t" в "char", возможна потеря данных
+C:\Users\ipato\source\repos\КАЛЬКУЛЯТОР\Калькулятор\MyForm.h(4399,14): warning C4244: инициализация: преобразование "wchar_t" в "char", возможна потеря данных
+C:\Users\ipato\source\repos\КАЛЬКУЛЯТОР\Калькулятор\MyForm.h(4416,14): warning C4244: инициализация: преобразование "wchar_t" в "char", возможна потеря данных
+C:\Users\ipato\source\repos\КАЛЬКУЛЯТОР\Калькулятор\MyForm.h(4433,14): warning C4244: инициализация: преобразование "wchar_t" в "char", возможна потеря данных
+C:\Users\ipato\source\repos\КАЛЬКУЛЯТОР\Калькулятор\MyForm.h(4450,14): warning C4244: инициализация: преобразование "wchar_t" в "char", возможна потеря данных
+C:\Users\ipato\source\repos\КАЛЬКУЛЯТОР\Калькулятор\MyForm.h(4467,14): warning C4244: инициализация: преобразование "wchar_t" в "char", возможна потеря данных
+C:\Users\ipato\source\repos\КАЛЬКУЛЯТОР\Калькулятор\MyForm.h(4484,14): warning C4244: инициализация: преобразование "wchar_t" в "char", возможна потеря данных
+C:\Users\ipato\source\repos\КАЛЬКУЛЯТОР\Калькулятор\MyForm.h(4501,14): warning C4244: инициализация: преобразование "wchar_t" в "char", возможна потеря данных
+C:\Users\ipato\source\repos\КАЛЬКУЛЯТОР\Калькулятор\MyForm.h(4519,14): warning C4244: инициализация: преобразование "wchar_t" в "char", возможна потеря данных
+C:\Users\ipato\source\repos\КАЛЬКУЛЯТОР\Калькулятор\MyForm.cpp(9,33): warning C4829: Возможно, неправильные параметры функции main. Рекомендуемый вариант - "int main(Platform::Array<Platform::String^>^ argv)"
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
+  Создание кода...
+  MyForm.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+LINK : fatal error LNK1561: точка входа должна быть определена
