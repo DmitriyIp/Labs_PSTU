@@ -1,8 +1,0 @@
-C:\Users\ipato\source\repos\Калькулятор\Калькулятор\x64\Debug\Калькулятор.vcxproj.AssemblyReference.cache
-C:\Users\ipato\source\repos\Калькулятор\Калькулятор\x64\Debug\Калькулятор.vcxproj.SuggestedBindingRedirects.cache
-C:\Users\ipato\source\repos\Калькулятор\Калькулятор\x64\Debug\Калькулятор.MyForm.resources
-C:\Users\ipato\source\repos\Калькулятор\Калькулятор\x64\Debug\Калькулятор.vcxproj.GenerateResource.cache
-E:\Калькулятор\Калькулятор\x64\Debug\Калькулятор.vcxproj.AssemblyReference.cache
-E:\Калькулятор\Калькулятор\x64\Debug\Калькулятор.vcxproj.SuggestedBindingRedirects.cache
-E:\Калькулятор\Калькулятор\x64\Debug\Калькулятор.MyForm.resources
-E:\Калькулятор\Калькулятор\x64\Debug\Калькулятор.vcxproj.GenerateResource.cache
